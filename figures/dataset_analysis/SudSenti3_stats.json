@@ -1,0 +1,31 @@
+{
+  "name": "SudSenti3",
+  "total_samples": 6957,
+  "num_classes": 3,
+  "class_distribution": {
+    "neg": 2571,
+    "obj": 1902,
+    "pos": 2484
+  },
+  "class_percentages": {
+    "neg": 36.96,
+    "obj": 27.34,
+    "pos": 35.71
+  },
+  "token_stats": {
+    "total_tokens": 119358,
+    "mean": 17.16,
+    "median": 15.0,
+    "std": 10.17,
+    "min": 1,
+    "max": 90
+  },
+  "char_stats": {
+    "total_chars": 693397,
+    "mean": 99.67,
+    "median": 88.0,
+    "min": 7,
+    "max": 752
+  },
+  "vocab_size": 23890
+}

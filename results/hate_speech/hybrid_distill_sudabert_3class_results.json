@@ -1,0 +1,81 @@
+{
+  "experiment_id": "distill_sudabert_3class",
+  "approach": "knowledge_distillation",
+  "teacher": "arabertv2",
+  "teacher_f1": 0.7838,
+  "student": "sudabert_v1",
+  "temperature": 4.0,
+  "alpha": 0.5,
+  "dataset_name": "3class",
+  "num_labels": 3,
+  "label_names": [
+    "HATE",
+    "OFFENSIVE",
+    "NEUTRAL"
+  ],
+  "train_size": 32000,
+  "val_size": 4000,
+  "test_size": 4000,
+  "best_val_f1": 0.7663,
+  "epochs_trained": 7,
+  "accuracy": 0.8287,
+  "f1_macro": 0.7872,
+  "f1_weighted": 0.826,
+  "per_class_f1": {
+    "HATE": 0.7657,
+    "OFFENSIVE": 0.7073,
+    "NEUTRAL": 0.8886
+  },
+  "confusion_matrix": [
+    [
+      536,
+      81,
+      126
+    ],
+    [
+      57,
+      598,
+      223
+    ],
+    [
+      64,
+      134,
+      2181
+    ]
+  ],
+  "classification_report": {
+    "HATE": {
+      "precision": 0.8158295281582952,
+      "recall": 0.721399730820996,
+      "f1-score": 0.7657142857142857,
+      "support": 743.0
+    },
+    "OFFENSIVE": {
+      "precision": 0.7355473554735548,
+      "recall": 0.6810933940774487,
+      "f1-score": 0.7072738024837374,
+      "support": 878.0
+    },
+    "NEUTRAL": {
+      "precision": 0.8620553359683795,
+      "recall": 0.9167717528373266,
+      "f1-score": 0.8885720105927888,
+      "support": 2379.0
+    },
+    "accuracy": 0.82875,
+    "macro avg": {
+      "precision": 0.8044774065334098,
+      "recall": 0.7730882925785904,
+      "f1-score": 0.7871866995969373,
+      "support": 4000.0
+    },
+    "weighted avg": {
+      "precision": 0.8257003904490423,
+      "recall": 0.82875,
+      "f1-score": 0.8259562315166701,
+      "support": 4000.0
+    }
+  },
+  "train_time_seconds": 1987.9,
+  "timestamp": "2026-04-02T12:03:57.782841"
+}

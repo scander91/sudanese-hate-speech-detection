@@ -1,0 +1,1196 @@
+[
+  {
+    "model": "cnn_baseline",
+    "dataset": "sudsenti2",
+    "method": "10-fold CV",
+    "num_classes": 2,
+    "labels": [
+      "neg",
+      "pos"
+    ],
+    "total_samples": 3996,
+    "accuracy": 65.36,
+    "accuracy_std": 1.5,
+    "f1_macro": 65.27,
+    "f1_macro_std": 1.55,
+    "f1_per_class": {
+      "neg": 65.32,
+      "pos": 65.23
+    },
+    "fold_results": [
+      {
+        "accuracy": 63.5,
+        "f1_macro": 63.09,
+        "f1_per_class": {
+          "neg": 66.97,
+          "pos": 59.22
+        },
+        "epochs_trained": 20,
+        "confusion_matrix": [
+          [
+            148,
+            49
+          ],
+          [
+            97,
+            106
+          ]
+        ],
+        "fold": 1
+      },
+      {
+        "accuracy": 64.5,
+        "f1_macro": 64.46,
+        "f1_per_class": {
+          "neg": 63.21,
+          "pos": 65.7
+        },
+        "epochs_trained": 19,
+        "confusion_matrix": [
+          [
+            122,
+            75
+          ],
+          [
+            67,
+            136
+          ]
+        ],
+        "fold": 2
+      },
+      {
+        "accuracy": 63.25,
+        "f1_macro": 63.08,
+        "f1_per_class": {
+          "neg": 60.59,
+          "pos": 65.57
+        },
+        "epochs_trained": 21,
+        "confusion_matrix": [
+          [
+            113,
+            84
+          ],
+          [
+            63,
+            140
+          ]
+        ],
+        "fold": 3
+      },
+      {
+        "accuracy": 68.5,
+        "f1_macro": 68.4,
+        "f1_per_class": {
+          "neg": 70.14,
+          "pos": 66.67
+        },
+        "epochs_trained": 21,
+        "confusion_matrix": [
+          [
+            148,
+            49
+          ],
+          [
+            77,
+            126
+          ]
+        ],
+        "fold": 4
+      },
+      {
+        "accuracy": 64.75,
+        "f1_macro": 64.7,
+        "f1_per_class": {
+          "neg": 66.02,
+          "pos": 63.38
+        },
+        "epochs_trained": 19,
+        "confusion_matrix": [
+          [
+            137,
+            60
+          ],
+          [
+            81,
+            122
+          ]
+        ],
+        "fold": 5
+      },
+      {
+        "accuracy": 67.0,
+        "f1_macro": 66.99,
+        "f1_per_class": {
+          "neg": 67.49,
+          "pos": 66.5
+        },
+        "epochs_trained": 21,
+        "confusion_matrix": [
+          [
+            137,
+            60
+          ],
+          [
+            72,
+            131
+          ]
+        ],
+        "fold": 6
+      },
+      {
+        "accuracy": 65.16,
+        "f1_macro": 65.16,
+        "f1_per_class": {
+          "neg": 65.51,
+          "pos": 64.81
+        },
+        "epochs_trained": 21,
+        "confusion_matrix": [
+          [
+            132,
+            65
+          ],
+          [
+            74,
+            128
+          ]
+        ],
+        "fold": 7
+      },
+      {
+        "accuracy": 65.16,
+        "f1_macro": 65.11,
+        "f1_per_class": {
+          "neg": 63.71,
+          "pos": 66.51
+        },
+        "epochs_trained": 19,
+        "confusion_matrix": [
+          [
+            122,
+            75
+          ],
+          [
+            64,
+            138
+          ]
+        ],
+        "fold": 8
+      },
+      {
+        "accuracy": 66.17,
+        "f1_macro": 66.06,
+        "f1_per_class": {
+          "neg": 64.19,
+          "pos": 67.93
+        },
+        "epochs_trained": 20,
+        "confusion_matrix": [
+          [
+            121,
+            76
+          ],
+          [
+            59,
+            143
+          ]
+        ],
+        "fold": 9
+      },
+      {
+        "accuracy": 65.66,
+        "f1_macro": 65.66,
+        "f1_per_class": {
+          "neg": 65.32,
+          "pos": 66.0
+        },
+        "epochs_trained": 21,
+        "confusion_matrix": [
+          [
+            129,
+            68
+          ],
+          [
+            69,
+            133
+          ]
+        ],
+        "fold": 10
+      }
+    ],
+    "training_time": 704.0
+  },
+  {
+    "model": "scm_mma",
+    "dataset": "sudsenti2",
+    "method": "10-fold CV",
+    "num_classes": 2,
+    "labels": [
+      "neg",
+      "pos"
+    ],
+    "total_samples": 3996,
+    "accuracy": 63.49,
+    "accuracy_std": 3.63,
+    "f1_macro": 62.61,
+    "f1_macro_std": 3.9,
+    "f1_per_class": {
+      "neg": 58.92,
+      "pos": 66.29
+    },
+    "fold_results": [
+      {
+        "accuracy": 57.25,
+        "f1_macro": 56.8,
+        "f1_per_class": {
+          "neg": 52.37,
+          "pos": 61.22
+        },
+        "epochs_trained": 20,
+        "confusion_matrix": [
+          [
+            94,
+            103
+          ],
+          [
+            68,
+            135
+          ]
+        ],
+        "fold": 1
+      },
+      {
+        "accuracy": 65.0,
+        "f1_macro": 64.4,
+        "f1_per_class": {
+          "neg": 59.77,
+          "pos": 69.03
+        },
+        "epochs_trained": 19,
+        "confusion_matrix": [
+          [
+            104,
+            93
+          ],
+          [
+            47,
+            156
+          ]
+        ],
+        "fold": 2
+      },
+      {
+        "accuracy": 57.75,
+        "f1_macro": 56.94,
+        "f1_per_class": {
+          "neg": 62.86,
+          "pos": 51.01
+        },
+        "epochs_trained": 20,
+        "confusion_matrix": [
+          [
+            143,
+            54
+          ],
+          [
+            115,
+            88
+          ]
+        ],
+        "fold": 3
+      },
+      {
+        "accuracy": 63.25,
+        "f1_macro": 60.85,
+        "f1_per_class": {
+          "neg": 51.16,
+          "pos": 70.54
+        },
+        "epochs_trained": 22,
+        "confusion_matrix": [
+          [
+            77,
+            120
+          ],
+          [
+            27,
+            176
+          ]
+        ],
+        "fold": 4
+      },
+      {
+        "accuracy": 60.75,
+        "f1_macro": 58.89,
+        "f1_per_class": {
+          "neg": 50.16,
+          "pos": 67.63
+        },
+        "epochs_trained": 18,
+        "confusion_matrix": [
+          [
+            79,
+            118
+          ],
+          [
+            39,
+            164
+          ]
+        ],
+        "fold": 5
+      },
+      {
+        "accuracy": 65.75,
+        "f1_macro": 65.62,
+        "f1_per_class": {
+          "neg": 63.47,
+          "pos": 67.76
+        },
+        "epochs_trained": 19,
+        "confusion_matrix": [
+          [
+            119,
+            78
+          ],
+          [
+            59,
+            144
+          ]
+        ],
+        "fold": 6
+      },
+      {
+        "accuracy": 67.67,
+        "f1_macro": 67.49,
+        "f1_per_class": {
+          "neg": 69.93,
+          "pos": 65.04
+        },
+        "epochs_trained": 21,
+        "confusion_matrix": [
+          [
+            150,
+            47
+          ],
+          [
+            82,
+            120
+          ]
+        ],
+        "fold": 7
+      },
+      {
+        "accuracy": 65.91,
+        "f1_macro": 65.25,
+        "f1_per_class": {
+          "neg": 60.47,
+          "pos": 70.04
+        },
+        "epochs_trained": 19,
+        "confusion_matrix": [
+          [
+            104,
+            93
+          ],
+          [
+            43,
+            159
+          ]
+        ],
+        "fold": 8
+      },
+      {
+        "accuracy": 63.41,
+        "f1_macro": 62.14,
+        "f1_per_class": {
+          "neg": 55.21,
+          "pos": 69.07
+        },
+        "epochs_trained": 21,
+        "confusion_matrix": [
+          [
+            90,
+            107
+          ],
+          [
+            39,
+            163
+          ]
+        ],
+        "fold": 9
+      },
+      {
+        "accuracy": 68.17,
+        "f1_macro": 67.7,
+        "f1_per_class": {
+          "neg": 63.82,
+          "pos": 71.59
+        },
+        "epochs_trained": 22,
+        "confusion_matrix": [
+          [
+            112,
+            85
+          ],
+          [
+            42,
+            160
+          ]
+        ],
+        "fold": 10
+      }
+    ],
+    "training_time": 609.2
+  },
+  {
+    "model": "cnn_baseline",
+    "dataset": "sudsenti3",
+    "method": "10-fold CV",
+    "num_classes": 3,
+    "labels": [
+      "neg",
+      "obj",
+      "pos"
+    ],
+    "total_samples": 6957,
+    "accuracy": 83.0,
+    "accuracy_std": 1.22,
+    "f1_macro": 83.03,
+    "f1_macro_std": 1.13,
+    "f1_per_class": {
+      "neg": 82.69,
+      "obj": 83.53,
+      "pos": 82.88
+    },
+    "fold_results": [
+      {
+        "accuracy": 83.91,
+        "f1_macro": 83.86,
+        "f1_per_class": {
+          "neg": 83.12,
+          "obj": 83.14,
+          "pos": 85.31
+        },
+        "epochs_trained": 20,
+        "confusion_matrix": [
+          [
+            229,
+            6,
+            23
+          ],
+          [
+            33,
+            143,
+            14
+          ],
+          [
+            31,
+            5,
+            212
+          ]
+        ],
+        "fold": 1
+      },
+      {
+        "accuracy": 80.32,
+        "f1_macro": 80.5,
+        "f1_per_class": {
+          "neg": 80.29,
+          "obj": 82.64,
+          "pos": 78.56
+        },
+        "epochs_trained": 21,
+        "confusion_matrix": [
+          [
+            224,
+            12,
+            21
+          ],
+          [
+            24,
+            150,
+            16
+          ],
+          [
+            53,
+            11,
+            185
+          ]
+        ],
+        "fold": 2
+      },
+      {
+        "accuracy": 83.48,
+        "f1_macro": 83.15,
+        "f1_per_class": {
+          "neg": 84.89,
+          "obj": 80.58,
+          "pos": 83.97
+        },
+        "epochs_trained": 20,
+        "confusion_matrix": [
+          [
+            222,
+            7,
+            28
+          ],
+          [
+            24,
+            139,
+            27
+          ],
+          [
+            20,
+            9,
+            220
+          ]
+        ],
+        "fold": 3
+      },
+      {
+        "accuracy": 83.91,
+        "f1_macro": 83.83,
+        "f1_per_class": {
+          "neg": 85.17,
+          "obj": 83.28,
+          "pos": 83.05
+        },
+        "epochs_trained": 21,
+        "confusion_matrix": [
+          [
+            224,
+            2,
+            31
+          ],
+          [
+            21,
+            142,
+            27
+          ],
+          [
+            24,
+            7,
+            218
+          ]
+        ],
+        "fold": 4
+      },
+      {
+        "accuracy": 83.76,
+        "f1_macro": 83.67,
+        "f1_per_class": {
+          "neg": 82.75,
+          "obj": 82.49,
+          "pos": 85.77
+        },
+        "epochs_trained": 20,
+        "confusion_matrix": [
+          [
+            223,
+            11,
+            23
+          ],
+          [
+            31,
+            146,
+            13
+          ],
+          [
+            28,
+            7,
+            214
+          ]
+        ],
+        "fold": 5
+      },
+      {
+        "accuracy": 84.2,
+        "f1_macro": 84.17,
+        "f1_per_class": {
+          "neg": 84.64,
+          "obj": 84.3,
+          "pos": 83.58
+        },
+        "epochs_trained": 19,
+        "confusion_matrix": [
+          [
+            237,
+            9,
+            11
+          ],
+          [
+            24,
+            153,
+            14
+          ],
+          [
+            42,
+            10,
+            196
+          ]
+        ],
+        "fold": 6
+      },
+      {
+        "accuracy": 83.62,
+        "f1_macro": 83.75,
+        "f1_per_class": {
+          "neg": 83.18,
+          "obj": 84.81,
+          "pos": 83.27
+        },
+        "epochs_trained": 19,
+        "confusion_matrix": [
+          [
+            225,
+            8,
+            24
+          ],
+          [
+            22,
+            148,
+            21
+          ],
+          [
+            37,
+            2,
+            209
+          ]
+        ],
+        "fold": 7
+      },
+      {
+        "accuracy": 81.58,
+        "f1_macro": 81.68,
+        "f1_per_class": {
+          "neg": 80.0,
+          "obj": 82.52,
+          "pos": 82.51
+        },
+        "epochs_trained": 20,
+        "confusion_matrix": [
+          [
+            206,
+            11,
+            40
+          ],
+          [
+            25,
+            144,
+            21
+          ],
+          [
+            27,
+            4,
+            217
+          ]
+        ],
+        "fold": 8
+      },
+      {
+        "accuracy": 81.87,
+        "f1_macro": 82.17,
+        "f1_per_class": {
+          "neg": 80.16,
+          "obj": 85.71,
+          "pos": 80.63
+        },
+        "epochs_trained": 19,
+        "confusion_matrix": [
+          [
+            200,
+            16,
+            41
+          ],
+          [
+            12,
+            165,
+            13
+          ],
+          [
+            30,
+            14,
+            204
+          ]
+        ],
+        "fold": 9
+      },
+      {
+        "accuracy": 83.31,
+        "f1_macro": 83.55,
+        "f1_per_class": {
+          "neg": 82.72,
+          "obj": 85.79,
+          "pos": 82.14
+        },
+        "epochs_trained": 19,
+        "confusion_matrix": [
+          [
+            225,
+            7,
+            25
+          ],
+          [
+            22,
+            154,
+            14
+          ],
+          [
+            40,
+            8,
+            200
+          ]
+        ],
+        "fold": 10
+      }
+    ],
+    "training_time": 728.4
+  },
+  {
+    "model": "scm_mma",
+    "dataset": "sudsenti3",
+    "method": "10-fold CV",
+    "num_classes": 3,
+    "labels": [
+      "neg",
+      "obj",
+      "pos"
+    ],
+    "total_samples": 6957,
+    "accuracy": 81.36,
+    "accuracy_std": 1.44,
+    "f1_macro": 81.42,
+    "f1_macro_std": 1.49,
+    "f1_per_class": {
+      "neg": 81.14,
+      "obj": 82.13,
+      "pos": 81.01
+    },
+    "fold_results": [
+      {
+        "accuracy": 80.32,
+        "f1_macro": 80.14,
+        "f1_per_class": {
+          "neg": 79.93,
+          "obj": 78.12,
+          "pos": 82.38
+        },
+        "epochs_trained": 23,
+        "confusion_matrix": [
+          [
+            217,
+            19,
+            22
+          ],
+          [
+            32,
+            141,
+            17
+          ],
+          [
+            36,
+            11,
+            201
+          ]
+        ],
+        "fold": 1
+      },
+      {
+        "accuracy": 79.31,
+        "f1_macro": 79.22,
+        "f1_per_class": {
+          "neg": 80.62,
+          "obj": 78.36,
+          "pos": 78.67
+        },
+        "epochs_trained": 22,
+        "confusion_matrix": [
+          [
+            208,
+            16,
+            33
+          ],
+          [
+            19,
+            143,
+            28
+          ],
+          [
+            32,
+            16,
+            201
+          ]
+        ],
+        "fold": 2
+      },
+      {
+        "accuracy": 82.33,
+        "f1_macro": 82.14,
+        "f1_per_class": {
+          "neg": 82.35,
+          "obj": 80.58,
+          "pos": 83.5
+        },
+        "epochs_trained": 22,
+        "confusion_matrix": [
+          [
+            224,
+            8,
+            25
+          ],
+          [
+            32,
+            139,
+            19
+          ],
+          [
+            31,
+            8,
+            210
+          ]
+        ],
+        "fold": 3
+      },
+      {
+        "accuracy": 84.2,
+        "f1_macro": 84.23,
+        "f1_per_class": {
+          "neg": 85.19,
+          "obj": 85.33,
+          "pos": 82.18
+        },
+        "epochs_trained": 22,
+        "confusion_matrix": [
+          [
+            230,
+            11,
+            16
+          ],
+          [
+            14,
+            160,
+            16
+          ],
+          [
+            39,
+            14,
+            196
+          ]
+        ],
+        "fold": 4
+      },
+      {
+        "accuracy": 79.74,
+        "f1_macro": 79.88,
+        "f1_per_class": {
+          "neg": 80.62,
+          "obj": 81.02,
+          "pos": 78.01
+        },
+        "epochs_trained": 20,
+        "confusion_matrix": [
+          [
+            208,
+            4,
+            45
+          ],
+          [
+            22,
+            143,
+            25
+          ],
+          [
+            29,
+            16,
+            204
+          ]
+        ],
+        "fold": 5
+      },
+      {
+        "accuracy": 80.46,
+        "f1_macro": 80.44,
+        "f1_per_class": {
+          "neg": 80.87,
+          "obj": 80.22,
+          "pos": 80.23
+        },
+        "epochs_trained": 22,
+        "confusion_matrix": [
+          [
+            205,
+            12,
+            40
+          ],
+          [
+            20,
+            144,
+            27
+          ],
+          [
+            25,
+            12,
+            211
+          ]
+        ],
+        "fold": 6
+      },
+      {
+        "accuracy": 80.6,
+        "f1_macro": 80.87,
+        "f1_per_class": {
+          "neg": 79.56,
+          "obj": 83.38,
+          "pos": 79.66
+        },
+        "epochs_trained": 22,
+        "confusion_matrix": [
+          [
+            218,
+            11,
+            28
+          ],
+          [
+            27,
+            153,
+            11
+          ],
+          [
+            46,
+            12,
+            190
+          ]
+        ],
+        "fold": 7
+      },
+      {
+        "accuracy": 81.87,
+        "f1_macro": 81.95,
+        "f1_per_class": {
+          "neg": 80.95,
+          "obj": 82.72,
+          "pos": 82.18
+        },
+        "epochs_trained": 22,
+        "confusion_matrix": [
+          [
+            204,
+            8,
+            45
+          ],
+          [
+            23,
+            146,
+            21
+          ],
+          [
+            20,
+            9,
+            219
+          ]
+        ],
+        "fold": 8
+      },
+      {
+        "accuracy": 82.59,
+        "f1_macro": 82.95,
+        "f1_per_class": {
+          "neg": 80.93,
+          "obj": 85.87,
+          "pos": 82.05
+        },
+        "epochs_trained": 21,
+        "confusion_matrix": [
+          [
+            227,
+            10,
+            20
+          ],
+          [
+            27,
+            155,
+            8
+          ],
+          [
+            50,
+            6,
+            192
+          ]
+        ],
+        "fold": 9
+      },
+      {
+        "accuracy": 82.16,
+        "f1_macro": 82.42,
+        "f1_per_class": {
+          "neg": 80.33,
+          "obj": 85.71,
+          "pos": 81.21
+        },
+        "epochs_trained": 21,
+        "confusion_matrix": [
+          [
+            192,
+            17,
+            48
+          ],
+          [
+            8,
+            165,
+            17
+          ],
+          [
+            21,
+            13,
+            214
+          ]
+        ],
+        "fold": 10
+      }
+    ],
+    "training_time": 668.1
+  },
+  {
+    "model": "cnn_baseline",
+    "dataset": "hs_binary",
+    "method": "80/10/10 split",
+    "num_classes": 2,
+    "labels": [
+      "HARMFUL",
+      "NEUTRAL"
+    ],
+    "total_samples": 38615,
+    "train_size": 34753,
+    "test_size": 3862,
+    "accuracy": 75.82,
+    "f1_macro": 73.27,
+    "f1_per_class": {
+      "HARMFUL": 65.02,
+      "NEUTRAL": 81.52
+    },
+    "confusion_matrix": [
+      [
+        868,
+        696
+      ],
+      [
+        238,
+        2060
+      ]
+    ],
+    "epochs_trained": 8,
+    "training_time": 105.0
+  },
+  {
+    "model": "scm_mma",
+    "dataset": "hs_binary",
+    "method": "80/10/10 split",
+    "num_classes": 2,
+    "labels": [
+      "HARMFUL",
+      "NEUTRAL"
+    ],
+    "total_samples": 38615,
+    "train_size": 34753,
+    "test_size": 3862,
+    "accuracy": 72.53,
+    "f1_macro": 67.89,
+    "f1_per_class": {
+      "HARMFUL": 55.7,
+      "NEUTRAL": 80.09
+    },
+    "confusion_matrix": [
+      [
+        667,
+        897
+      ],
+      [
+        164,
+        2134
+      ]
+    ],
+    "epochs_trained": 8,
+    "training_time": 93.7
+  },
+  {
+    "model": "cnn_baseline",
+    "dataset": "hs_3class",
+    "method": "80/10/10 split",
+    "num_classes": 3,
+    "labels": [
+      "HATE",
+      "NEUTRAL",
+      "OFFENSIVE"
+    ],
+    "total_samples": 38615,
+    "train_size": 34753,
+    "test_size": 3862,
+    "accuracy": 70.59,
+    "f1_macro": 64.21,
+    "f1_per_class": {
+      "HATE": 60.34,
+      "NEUTRAL": 79.8,
+      "OFFENSIVE": 52.48
+    },
+    "confusion_matrix": [
+      [
+        369,
+        225,
+        123
+      ],
+      [
+        87,
+        1902,
+        308
+      ],
+      [
+        50,
+        343,
+        455
+      ]
+    ],
+    "epochs_trained": 8,
+    "training_time": 86.8
+  },
+  {
+    "model": "scm_mma",
+    "dataset": "hs_3class",
+    "method": "80/10/10 split",
+    "num_classes": 3,
+    "labels": [
+      "HATE",
+      "NEUTRAL",
+      "OFFENSIVE"
+    ],
+    "total_samples": 38615,
+    "train_size": 34753,
+    "test_size": 3862,
+    "accuracy": 69.6,
+    "f1_macro": 60.81,
+    "f1_per_class": {
+      "HATE": 62.38,
+      "NEUTRAL": 79.23,
+      "OFFENSIVE": 40.81
+    },
+    "confusion_matrix": [
+      [
+        398,
+        247,
+        72
+      ],
+      [
+        112,
+        2009,
+        176
+      ],
+      [
+        49,
+        518,
+        281
+      ]
+    ],
+    "epochs_trained": 9,
+    "training_time": 92.2
+  }
+]

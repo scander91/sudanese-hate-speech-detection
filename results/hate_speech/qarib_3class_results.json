@@ -1,0 +1,76 @@
+{
+  "experiment_id": "qarib_3class",
+  "model_name": "qarib",
+  "model_path": "qarib/bert-base-qarib",
+  "dataset_name": "3class",
+  "num_labels": 3,
+  "label_names": [
+    "HATE",
+    "OFFENSIVE",
+    "NEUTRAL"
+  ],
+  "train_size": 32000,
+  "val_size": 4000,
+  "test_size": 4000,
+  "accuracy": 0.8153,
+  "f1_macro": 0.7787,
+  "f1_weighted": 0.8166,
+  "per_class_f1": {
+    "HATE": 0.7595,
+    "OFFENSIVE": 0.6987,
+    "NEUTRAL": 0.878
+  },
+  "confusion_matrix": [
+    [
+      592,
+      62,
+      89
+    ],
+    [
+      107,
+      618,
+      153
+    ],
+    [
+      117,
+      211,
+      2051
+    ]
+  ],
+  "classification_report": {
+    "HATE": {
+      "precision": 0.7254901960784313,
+      "recall": 0.7967698519515478,
+      "f1-score": 0.7594611930724824,
+      "support": 743.0
+    },
+    "OFFENSIVE": {
+      "precision": 0.6936026936026936,
+      "recall": 0.7038724373576309,
+      "f1-score": 0.6986998304126625,
+      "support": 878.0
+    },
+    "NEUTRAL": {
+      "precision": 0.894461404273877,
+      "recall": 0.8621269440941572,
+      "f1-score": 0.8779965753424658,
+      "support": 2379.0
+    },
+    "accuracy": 0.81525,
+    "macro avg": {
+      "precision": 0.7711847646516672,
+      "recall": 0.7875897444677786,
+      "f1-score": 0.7787191996092035,
+      "support": 4000.0
+    },
+    "weighted avg": {
+      "precision": 0.8189865153592482,
+      "recall": 0.81525,
+      "f1-score": 0.8166229925737245,
+      "support": 4000.0
+    }
+  },
+  "train_time_seconds": 407.7,
+  "model_params_M": 135.2,
+  "timestamp": "2026-03-31T16:39:28.521637"
+}

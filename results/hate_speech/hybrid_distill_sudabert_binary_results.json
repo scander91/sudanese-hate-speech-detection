@@ -1,0 +1,66 @@
+{
+  "experiment_id": "distill_sudabert_binary",
+  "approach": "knowledge_distillation",
+  "teacher": "marbertv2",
+  "teacher_f1": 0.8515,
+  "student": "sudabert_v1",
+  "temperature": 4.0,
+  "alpha": 0.5,
+  "dataset_name": "binary",
+  "num_labels": 2,
+  "label_names": [
+    "HARMFUL",
+    "NEUTRAL"
+  ],
+  "train_size": 32000,
+  "val_size": 4000,
+  "test_size": 4000,
+  "best_val_f1": 0.8575,
+  "epochs_trained": 5,
+  "accuracy": 0.851,
+  "f1_macro": 0.8448,
+  "f1_weighted": 0.8507,
+  "per_class_f1": {
+    "HARMFUL": 0.8136,
+    "NEUTRAL": 0.8759
+  },
+  "confusion_matrix": [
+    [
+      1301,
+      320
+    ],
+    [
+      276,
+      2103
+    ]
+  ],
+  "classification_report": {
+    "HARMFUL": {
+      "precision": 0.8249841471147749,
+      "recall": 0.8025909932140654,
+      "f1-score": 0.8136335209505942,
+      "support": 1621.0
+    },
+    "NEUTRAL": {
+      "precision": 0.8679323153115972,
+      "recall": 0.8839848675914249,
+      "f1-score": 0.8758850478967097,
+      "support": 2379.0
+    },
+    "accuracy": 0.851,
+    "macro avg": {
+      "precision": 0.8464582312131861,
+      "recall": 0.8432879304027452,
+      "f1-score": 0.844759284423652,
+      "support": 4000.0
+    },
+    "weighted avg": {
+      "precision": 0.8505275701498349,
+      "recall": 0.851,
+      "f1-score": 0.8506576166017965,
+      "support": 4000.0
+    }
+  },
+  "train_time_seconds": 1444.7,
+  "timestamp": "2026-04-02T10:49:34.286020"
+}

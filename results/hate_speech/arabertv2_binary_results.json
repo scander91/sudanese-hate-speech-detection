@@ -1,0 +1,61 @@
+{
+  "experiment_id": "arabertv2_binary",
+  "model_name": "arabertv2",
+  "model_path": "aubmindlab/bert-base-arabertv02",
+  "dataset_name": "binary",
+  "num_labels": 2,
+  "label_names": [
+    "HARMFUL",
+    "NEUTRAL"
+  ],
+  "train_size": 32000,
+  "val_size": 4000,
+  "test_size": 4000,
+  "accuracy": 0.854,
+  "f1_macro": 0.8468,
+  "f1_weighted": 0.8531,
+  "per_class_f1": {
+    "HARMFUL": 0.8134,
+    "NEUTRAL": 0.8801
+  },
+  "confusion_matrix": [
+    [
+      1273,
+      348
+    ],
+    [
+      236,
+      2143
+    ]
+  ],
+  "classification_report": {
+    "HARMFUL": {
+      "precision": 0.8436050364479788,
+      "recall": 0.7853177051202961,
+      "f1-score": 0.8134185303514377,
+      "support": 1621.0
+    },
+    "NEUTRAL": {
+      "precision": 0.86029706945002,
+      "recall": 0.9007986548970156,
+      "f1-score": 0.8800821355236139,
+      "support": 2379.0
+    },
+    "accuracy": 0.854,
+    "macro avg": {
+      "precision": 0.8519510529489994,
+      "recall": 0.8430581800086558,
+      "f1-score": 0.8467503329375259,
+      "support": 4000.0
+    },
+    "weighted avg": {
+      "precision": 0.8535326230759429,
+      "recall": 0.854,
+      "f1-score": 0.8530667095275895,
+      "support": 4000.0
+    }
+  },
+  "train_time_seconds": 403.8,
+  "model_params_M": 135.2,
+  "timestamp": "2026-03-31T16:01:21.315024"
+}

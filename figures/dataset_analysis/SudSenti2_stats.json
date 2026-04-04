@@ -1,0 +1,29 @@
+{
+  "name": "SudSenti2",
+  "total_samples": 4001,
+  "num_classes": 2,
+  "class_distribution": {
+    "neg": 1973,
+    "pos": 2028
+  },
+  "class_percentages": {
+    "neg": 49.31,
+    "pos": 50.69
+  },
+  "token_stats": {
+    "total_tokens": 45851,
+    "mean": 11.46,
+    "median": 6.0,
+    "std": 21.1,
+    "min": 1,
+    "max": 575
+  },
+  "char_stats": {
+    "total_chars": 252476,
+    "mean": 63.1,
+    "median": 33.0,
+    "min": 1,
+    "max": 3214
+  },
+  "vocab_size": 15231
+}

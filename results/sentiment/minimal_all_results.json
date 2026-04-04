@@ -1,0 +1,2369 @@
+[
+  {
+    "model": "marbertv2",
+    "model_path": "UBC-NLP/MARBERTv2",
+    "dataset": "telecom",
+    "num_classes": 3,
+    "labels": [
+      "neg",
+      "obj",
+      "pos"
+    ],
+    "train_size": 3848,
+    "val_size": 428,
+    "test_size": 1069,
+    "accuracy": 78.48,
+    "f1_macro": 64.5,
+    "f1_weighted": 77.91,
+    "f1_per_class": {
+      "neg": 88.27,
+      "obj": 40.7,
+      "pos": 64.52
+    },
+    "epochs_trained": 5,
+    "best_epoch": 5,
+    "training_time": 100.9
+  },
+  {
+    "model": "marbert",
+    "model_path": "UBC-NLP/MARBERT",
+    "dataset": "telecom",
+    "num_classes": 3,
+    "labels": [
+      "neg",
+      "obj",
+      "pos"
+    ],
+    "train_size": 3848,
+    "val_size": 428,
+    "test_size": 1069,
+    "accuracy": 78.02,
+    "f1_macro": 64.66,
+    "f1_weighted": 77.28,
+    "f1_per_class": {
+      "neg": 87.18,
+      "obj": 46.21,
+      "pos": 60.61
+    },
+    "epochs_trained": 5,
+    "best_epoch": 5,
+    "training_time": 107.0
+  },
+  {
+    "model": "arbert",
+    "model_path": "UBC-NLP/ARBERT",
+    "dataset": "telecom",
+    "num_classes": 3,
+    "labels": [
+      "neg",
+      "obj",
+      "pos"
+    ],
+    "train_size": 3848,
+    "val_size": 428,
+    "test_size": 1069,
+    "accuracy": 75.87,
+    "f1_macro": 60.58,
+    "f1_weighted": 74.77,
+    "f1_per_class": {
+      "neg": 85.82,
+      "obj": 37.98,
+      "pos": 57.94
+    },
+    "epochs_trained": 5,
+    "best_epoch": 4,
+    "training_time": 136.6
+  },
+  {
+    "model": "arabertv2",
+    "model_path": "aubmindlab/bert-base-arabertv02",
+    "dataset": "telecom",
+    "num_classes": 3,
+    "labels": [
+      "neg",
+      "obj",
+      "pos"
+    ],
+    "train_size": 3848,
+    "val_size": 428,
+    "test_size": 1069,
+    "accuracy": 77.08,
+    "f1_macro": 62.33,
+    "f1_weighted": 76.38,
+    "f1_per_class": {
+      "neg": 87.32,
+      "obj": 39.86,
+      "pos": 59.81
+    },
+    "epochs_trained": 5,
+    "best_epoch": 5,
+    "training_time": 95.9
+  },
+  {
+    "model": "camelbert_da",
+    "model_path": "CAMeL-Lab/bert-base-arabic-camelbert-da",
+    "dataset": "telecom",
+    "num_classes": 3,
+    "labels": [
+      "neg",
+      "obj",
+      "pos"
+    ],
+    "train_size": 3848,
+    "val_size": 428,
+    "test_size": 1069,
+    "accuracy": 78.95,
+    "f1_macro": 62.75,
+    "f1_weighted": 76.89,
+    "f1_per_class": {
+      "neg": 88.02,
+      "obj": 42.98,
+      "pos": 57.25
+    },
+    "epochs_trained": 5,
+    "best_epoch": 3,
+    "training_time": 86.9
+  },
+  {
+    "model": "qarib",
+    "model_path": "qarib/bert-base-qarib",
+    "dataset": "telecom",
+    "num_classes": 3,
+    "labels": [
+      "neg",
+      "obj",
+      "pos"
+    ],
+    "train_size": 3848,
+    "val_size": 428,
+    "test_size": 1069,
+    "accuracy": 77.27,
+    "f1_macro": 62.65,
+    "f1_weighted": 76.42,
+    "f1_per_class": {
+      "neg": 87.07,
+      "obj": 38.55,
+      "pos": 62.34
+    },
+    "epochs_trained": 5,
+    "best_epoch": 4,
+    "training_time": 96.4
+  },
+  {
+    "model": "sudabert_v2",
+    "model_path": "/home/macierz/mohabdal/sudanese_dialect_project/models/sudabert_v2/sudabert_v2/",
+    "dataset": "telecom",
+    "num_classes": 3,
+    "labels": [
+      "neg",
+      "obj",
+      "pos"
+    ],
+    "train_size": 3848,
+    "val_size": 428,
+    "test_size": 1069,
+    "accuracy": 77.46,
+    "f1_macro": 61.34,
+    "f1_weighted": 75.72,
+    "f1_per_class": {
+      "neg": 86.95,
+      "obj": 39.04,
+      "pos": 58.04
+    },
+    "epochs_trained": 5,
+    "best_epoch": 3,
+    "training_time": 93.3
+  },
+  {
+    "model": "xlm_roberta",
+    "model_path": "xlm-roberta-base",
+    "dataset": "telecom",
+    "num_classes": 3,
+    "labels": [
+      "neg",
+      "obj",
+      "pos"
+    ],
+    "train_size": 3848,
+    "val_size": 428,
+    "test_size": 1069,
+    "accuracy": 73.81,
+    "f1_macro": 45.61,
+    "f1_weighted": 68.08,
+    "f1_per_class": {
+      "neg": 85.23,
+      "obj": 0.0,
+      "pos": 51.61
+    },
+    "epochs_trained": 5,
+    "best_epoch": 5,
+    "training_time": 141.3
+  },
+  {
+    "model": "mbert",
+    "model_path": "bert-base-multilingual-cased",
+    "dataset": "telecom",
+    "num_classes": 3,
+    "labels": [
+      "neg",
+      "obj",
+      "pos"
+    ],
+    "train_size": 3848,
+    "val_size": 428,
+    "test_size": 1069,
+    "accuracy": 75.49,
+    "f1_macro": 56.04,
+    "f1_weighted": 72.79,
+    "f1_per_class": {
+      "neg": 85.87,
+      "obj": 29.96,
+      "pos": 52.3
+    },
+    "epochs_trained": 5,
+    "best_epoch": 4,
+    "training_time": 107.6
+  },
+  {
+    "model": "marbertv2",
+    "model_path": "UBC-NLP/MARBERTv2",
+    "dataset": "sudsenti2",
+    "method": "10-fold CV",
+    "num_classes": 2,
+    "labels": [
+      "neg",
+      "pos"
+    ],
+    "total_samples": 4001,
+    "accuracy": 74.33,
+    "accuracy_std": 2.61,
+    "f1_macro": 74.29,
+    "f1_macro_std": 2.61,
+    "f1_per_class": {
+      "neg": 73.59,
+      "pos": 74.98
+    },
+    "fold_results": [
+      {
+        "fold": 1,
+        "accuracy": 77.31,
+        "f1_macro": 77.31,
+        "f1_per_class": {
+          "neg": 77.42,
+          "pos": 77.19
+        }
+      },
+      {
+        "fold": 2,
+        "accuracy": 76.5,
+        "f1_macro": 76.4,
+        "f1_per_class": {
+          "neg": 74.87,
+          "pos": 77.93
+        }
+      },
+      {
+        "fold": 3,
+        "accuracy": 73.5,
+        "f1_macro": 73.48,
+        "f1_per_class": {
+          "neg": 72.68,
+          "pos": 74.27
+        }
+      },
+      {
+        "fold": 4,
+        "accuracy": 71.5,
+        "f1_macro": 71.47,
+        "f1_per_class": {
+          "neg": 72.33,
+          "pos": 70.62
+        }
+      },
+      {
+        "fold": 5,
+        "accuracy": 73.0,
+        "f1_macro": 72.99,
+        "f1_per_class": {
+          "neg": 72.59,
+          "pos": 73.4
+        }
+      },
+      {
+        "fold": 6,
+        "accuracy": 69.75,
+        "f1_macro": 69.75,
+        "f1_per_class": {
+          "neg": 69.52,
+          "pos": 69.98
+        }
+      },
+      {
+        "fold": 7,
+        "accuracy": 73.5,
+        "f1_macro": 73.47,
+        "f1_per_class": {
+          "neg": 72.54,
+          "pos": 74.4
+        }
+      },
+      {
+        "fold": 8,
+        "accuracy": 78.25,
+        "f1_macro": 78.23,
+        "f1_per_class": {
+          "neg": 77.63,
+          "pos": 78.83
+        }
+      },
+      {
+        "fold": 9,
+        "accuracy": 73.25,
+        "f1_macro": 73.07,
+        "f1_per_class": {
+          "neg": 70.84,
+          "pos": 75.29
+        }
+      },
+      {
+        "fold": 10,
+        "accuracy": 76.75,
+        "f1_macro": 76.69,
+        "f1_per_class": {
+          "neg": 75.46,
+          "pos": 77.91
+        }
+      }
+    ],
+    "training_time": 709.9
+  },
+  {
+    "model": "marbert",
+    "model_path": "UBC-NLP/MARBERT",
+    "dataset": "sudsenti2",
+    "method": "10-fold CV",
+    "num_classes": 2,
+    "labels": [
+      "neg",
+      "pos"
+    ],
+    "total_samples": 3985,
+    "accuracy": 74.78,
+    "accuracy_std": 2.0,
+    "f1_macro": 74.76,
+    "f1_macro_std": 1.99,
+    "f1_per_class": {
+      "neg": 74.45,
+      "pos": 75.08
+    },
+    "fold_results": [
+      {
+        "fold": 1,
+        "accuracy": 74.69,
+        "f1_macro": 74.66,
+        "f1_per_class": {
+          "neg": 75.43,
+          "pos": 73.9
+        }
+      },
+      {
+        "fold": 2,
+        "accuracy": 73.93,
+        "f1_macro": 73.89,
+        "f1_per_class": {
+          "neg": 72.77,
+          "pos": 75.0
+        }
+      },
+      {
+        "fold": 3,
+        "accuracy": 71.93,
+        "f1_macro": 71.93,
+        "f1_per_class": {
+          "neg": 71.86,
+          "pos": 72.0
+        }
+      },
+      {
+        "fold": 4,
+        "accuracy": 75.69,
+        "f1_macro": 75.68,
+        "f1_per_class": {
+          "neg": 75.19,
+          "pos": 76.17
+        }
+      },
+      {
+        "fold": 5,
+        "accuracy": 78.2,
+        "f1_macro": 78.18,
+        "f1_per_class": {
+          "neg": 77.63,
+          "pos": 78.73
+        }
+      },
+      {
+        "fold": 6,
+        "accuracy": 73.87,
+        "f1_macro": 73.86,
+        "f1_per_class": {
+          "neg": 74.26,
+          "pos": 73.47
+        }
+      },
+      {
+        "fold": 7,
+        "accuracy": 71.86,
+        "f1_macro": 71.84,
+        "f1_per_class": {
+          "neg": 71.13,
+          "pos": 72.55
+        }
+      },
+      {
+        "fold": 8,
+        "accuracy": 75.63,
+        "f1_macro": 75.63,
+        "f1_per_class": {
+          "neg": 75.44,
+          "pos": 75.81
+        }
+      },
+      {
+        "fold": 9,
+        "accuracy": 77.64,
+        "f1_macro": 77.59,
+        "f1_per_class": {
+          "neg": 76.52,
+          "pos": 78.66
+        }
+      },
+      {
+        "fold": 10,
+        "accuracy": 74.37,
+        "f1_macro": 74.37,
+        "f1_per_class": {
+          "neg": 74.24,
+          "pos": 74.5
+        }
+      }
+    ],
+    "training_time": 724.8
+  },
+  {
+    "model": "arbert",
+    "model_path": "UBC-NLP/ARBERT",
+    "dataset": "sudsenti2",
+    "method": "10-fold CV",
+    "num_classes": 2,
+    "labels": [
+      "neg",
+      "pos"
+    ],
+    "total_samples": 3985,
+    "accuracy": 74.05,
+    "accuracy_std": 1.76,
+    "f1_macro": 74.04,
+    "f1_macro_std": 1.76,
+    "f1_per_class": {
+      "neg": 73.84,
+      "pos": 74.23
+    },
+    "fold_results": [
+      {
+        "fold": 1,
+        "accuracy": 73.68,
+        "f1_macro": 73.67,
+        "f1_per_class": {
+          "neg": 74.33,
+          "pos": 73.01
+        }
+      },
+      {
+        "fold": 2,
+        "accuracy": 73.43,
+        "f1_macro": 73.42,
+        "f1_per_class": {
+          "neg": 72.82,
+          "pos": 74.02
+        }
+      },
+      {
+        "fold": 3,
+        "accuracy": 71.18,
+        "f1_macro": 71.18,
+        "f1_per_class": {
+          "neg": 70.89,
+          "pos": 71.46
+        }
+      },
+      {
+        "fold": 4,
+        "accuracy": 73.18,
+        "f1_macro": 73.18,
+        "f1_per_class": {
+          "neg": 73.05,
+          "pos": 73.32
+        }
+      },
+      {
+        "fold": 5,
+        "accuracy": 78.45,
+        "f1_macro": 78.44,
+        "f1_per_class": {
+          "neg": 77.95,
+          "pos": 78.92
+        }
+      },
+      {
+        "fold": 6,
+        "accuracy": 72.86,
+        "f1_macro": 72.86,
+        "f1_per_class": {
+          "neg": 73.13,
+          "pos": 72.59
+        }
+      },
+      {
+        "fold": 7,
+        "accuracy": 74.37,
+        "f1_macro": 74.37,
+        "f1_per_class": {
+          "neg": 74.24,
+          "pos": 74.5
+        }
+      },
+      {
+        "fold": 8,
+        "accuracy": 74.62,
+        "f1_macro": 74.6,
+        "f1_per_class": {
+          "neg": 75.43,
+          "pos": 73.77
+        }
+      },
+      {
+        "fold": 9,
+        "accuracy": 74.12,
+        "f1_macro": 74.08,
+        "f1_per_class": {
+          "neg": 73.11,
+          "pos": 75.06
+        }
+      },
+      {
+        "fold": 10,
+        "accuracy": 74.62,
+        "f1_macro": 74.58,
+        "f1_per_class": {
+          "neg": 73.49,
+          "pos": 75.66
+        }
+      }
+    ],
+    "training_time": 731.3
+  },
+  {
+    "model": "arabertv2",
+    "model_path": "aubmindlab/bert-base-arabertv02",
+    "dataset": "sudsenti2",
+    "method": "10-fold CV",
+    "num_classes": 2,
+    "labels": [
+      "neg",
+      "pos"
+    ],
+    "total_samples": 4001,
+    "accuracy": 74.76,
+    "accuracy_std": 2.35,
+    "f1_macro": 74.73,
+    "f1_macro_std": 2.36,
+    "f1_per_class": {
+      "neg": 74.31,
+      "pos": 75.15
+    },
+    "fold_results": [
+      {
+        "fold": 1,
+        "accuracy": 76.31,
+        "f1_macro": 76.27,
+        "f1_per_class": {
+          "neg": 77.22,
+          "pos": 75.32
+        }
+      },
+      {
+        "fold": 2,
+        "accuracy": 78.25,
+        "f1_macro": 78.25,
+        "f1_per_class": {
+          "neg": 77.97,
+          "pos": 78.52
+        }
+      },
+      {
+        "fold": 3,
+        "accuracy": 76.25,
+        "f1_macro": 76.24,
+        "f1_per_class": {
+          "neg": 75.83,
+          "pos": 76.66
+        }
+      },
+      {
+        "fold": 4,
+        "accuracy": 72.5,
+        "f1_macro": 72.43,
+        "f1_per_class": {
+          "neg": 71.05,
+          "pos": 73.81
+        }
+      },
+      {
+        "fold": 5,
+        "accuracy": 71.5,
+        "f1_macro": 71.5,
+        "f1_per_class": {
+          "neg": 71.64,
+          "pos": 71.36
+        }
+      },
+      {
+        "fold": 6,
+        "accuracy": 73.0,
+        "f1_macro": 72.93,
+        "f1_per_class": {
+          "neg": 71.58,
+          "pos": 74.29
+        }
+      },
+      {
+        "fold": 7,
+        "accuracy": 73.0,
+        "f1_macro": 73.0,
+        "f1_per_class": {
+          "neg": 73.13,
+          "pos": 72.86
+        }
+      },
+      {
+        "fold": 8,
+        "accuracy": 76.75,
+        "f1_macro": 76.74,
+        "f1_per_class": {
+          "neg": 76.21,
+          "pos": 77.26
+        }
+      },
+      {
+        "fold": 9,
+        "accuracy": 72.5,
+        "f1_macro": 72.48,
+        "f1_per_class": {
+          "neg": 71.65,
+          "pos": 73.3
+        }
+      },
+      {
+        "fold": 10,
+        "accuracy": 77.5,
+        "f1_macro": 77.48,
+        "f1_per_class": {
+          "neg": 76.8,
+          "pos": 78.16
+        }
+      }
+    ],
+    "training_time": 661.4
+  },
+  {
+    "model": "camelbert_da",
+    "model_path": "CAMeL-Lab/bert-base-arabic-camelbert-da",
+    "dataset": "sudsenti2",
+    "method": "10-fold CV",
+    "num_classes": 2,
+    "labels": [
+      "neg",
+      "pos"
+    ],
+    "total_samples": 4001,
+    "accuracy": 72.38,
+    "accuracy_std": 2.01,
+    "f1_macro": 72.37,
+    "f1_macro_std": 2.02,
+    "f1_per_class": {
+      "neg": 71.91,
+      "pos": 72.82
+    },
+    "fold_results": [
+      {
+        "fold": 1,
+        "accuracy": 72.57,
+        "f1_macro": 72.56,
+        "f1_per_class": {
+          "neg": 73.04,
+          "pos": 72.08
+        }
+      },
+      {
+        "fold": 2,
+        "accuracy": 76.25,
+        "f1_macro": 76.25,
+        "f1_per_class": {
+          "neg": 76.07,
+          "pos": 76.43
+        }
+      },
+      {
+        "fold": 3,
+        "accuracy": 71.5,
+        "f1_macro": 71.5,
+        "f1_per_class": {
+          "neg": 71.21,
+          "pos": 71.78
+        }
+      },
+      {
+        "fold": 4,
+        "accuracy": 72.25,
+        "f1_macro": 72.17,
+        "f1_per_class": {
+          "neg": 70.71,
+          "pos": 73.63
+        }
+      },
+      {
+        "fold": 5,
+        "accuracy": 68.5,
+        "f1_macro": 68.45,
+        "f1_per_class": {
+          "neg": 67.19,
+          "pos": 69.71
+        }
+      },
+      {
+        "fold": 6,
+        "accuracy": 74.5,
+        "f1_macro": 74.5,
+        "f1_per_class": {
+          "neg": 74.37,
+          "pos": 74.63
+        }
+      },
+      {
+        "fold": 7,
+        "accuracy": 71.75,
+        "f1_macro": 71.75,
+        "f1_per_class": {
+          "neg": 71.82,
+          "pos": 71.68
+        }
+      },
+      {
+        "fold": 8,
+        "accuracy": 70.75,
+        "f1_macro": 70.74,
+        "f1_per_class": {
+          "neg": 70.08,
+          "pos": 71.39
+        }
+      },
+      {
+        "fold": 9,
+        "accuracy": 72.0,
+        "f1_macro": 71.99,
+        "f1_per_class": {
+          "neg": 71.43,
+          "pos": 72.55
+        }
+      },
+      {
+        "fold": 10,
+        "accuracy": 73.75,
+        "f1_macro": 73.74,
+        "f1_per_class": {
+          "neg": 73.15,
+          "pos": 74.33
+        }
+      }
+    ],
+    "training_time": 645.7
+  },
+  {
+    "model": "qarib",
+    "model_path": "qarib/bert-base-qarib",
+    "dataset": "sudsenti2",
+    "method": "10-fold CV",
+    "num_classes": 2,
+    "labels": [
+      "neg",
+      "pos"
+    ],
+    "total_samples": 4001,
+    "accuracy": 74.58,
+    "accuracy_std": 1.35,
+    "f1_macro": 74.57,
+    "f1_macro_std": 1.34,
+    "f1_per_class": {
+      "neg": 74.29,
+      "pos": 74.85
+    },
+    "fold_results": [
+      {
+        "fold": 1,
+        "accuracy": 74.81,
+        "f1_macro": 74.81,
+        "f1_per_class": {
+          "neg": 75.06,
+          "pos": 74.56
+        }
+      },
+      {
+        "fold": 2,
+        "accuracy": 77.25,
+        "f1_macro": 77.21,
+        "f1_per_class": {
+          "neg": 76.24,
+          "pos": 78.18
+        }
+      },
+      {
+        "fold": 3,
+        "accuracy": 75.75,
+        "f1_macro": 75.75,
+        "f1_per_class": {
+          "neg": 75.57,
+          "pos": 75.93
+        }
+      },
+      {
+        "fold": 4,
+        "accuracy": 74.5,
+        "f1_macro": 74.49,
+        "f1_per_class": {
+          "neg": 73.98,
+          "pos": 75.0
+        }
+      },
+      {
+        "fold": 5,
+        "accuracy": 73.75,
+        "f1_macro": 73.74,
+        "f1_per_class": {
+          "neg": 73.28,
+          "pos": 74.2
+        }
+      },
+      {
+        "fold": 6,
+        "accuracy": 74.0,
+        "f1_macro": 73.98,
+        "f1_per_class": {
+          "neg": 73.2,
+          "pos": 74.76
+        }
+      },
+      {
+        "fold": 7,
+        "accuracy": 75.75,
+        "f1_macro": 75.74,
+        "f1_per_class": {
+          "neg": 75.19,
+          "pos": 76.28
+        }
+      },
+      {
+        "fold": 8,
+        "accuracy": 73.25,
+        "f1_macro": 73.24,
+        "f1_per_class": {
+          "neg": 73.84,
+          "pos": 72.63
+        }
+      },
+      {
+        "fold": 9,
+        "accuracy": 72.25,
+        "f1_macro": 72.24,
+        "f1_per_class": {
+          "neg": 71.76,
+          "pos": 72.73
+        }
+      },
+      {
+        "fold": 10,
+        "accuracy": 74.5,
+        "f1_macro": 74.5,
+        "f1_per_class": {
+          "neg": 74.75,
+          "pos": 74.24
+        }
+      }
+    ],
+    "training_time": 676.2
+  },
+  {
+    "model": "sudabert_v2",
+    "model_path": "/home/macierz/mohabdal/sudanese_dialect_project/models/sudabert_v2/sudabert_v2/",
+    "dataset": "sudsenti2",
+    "method": "10-fold CV",
+    "num_classes": 2,
+    "labels": [
+      "neg",
+      "pos"
+    ],
+    "total_samples": 4001,
+    "accuracy": 74.56,
+    "accuracy_std": 2.04,
+    "f1_macro": 74.53,
+    "f1_macro_std": 2.04,
+    "f1_per_class": {
+      "neg": 74.25,
+      "pos": 74.81
+    },
+    "fold_results": [
+      {
+        "fold": 1,
+        "accuracy": 71.32,
+        "f1_macro": 71.32,
+        "f1_per_class": {
+          "neg": 71.6,
+          "pos": 71.03
+        }
+      },
+      {
+        "fold": 2,
+        "accuracy": 78.25,
+        "f1_macro": 78.22,
+        "f1_per_class": {
+          "neg": 77.4,
+          "pos": 79.04
+        }
+      },
+      {
+        "fold": 3,
+        "accuracy": 74.0,
+        "f1_macro": 73.92,
+        "f1_per_class": {
+          "neg": 72.49,
+          "pos": 75.36
+        }
+      },
+      {
+        "fold": 4,
+        "accuracy": 74.25,
+        "f1_macro": 74.22,
+        "f1_per_class": {
+          "neg": 75.06,
+          "pos": 73.39
+        }
+      },
+      {
+        "fold": 5,
+        "accuracy": 72.0,
+        "f1_macro": 71.94,
+        "f1_per_class": {
+          "neg": 70.68,
+          "pos": 73.21
+        }
+      },
+      {
+        "fold": 6,
+        "accuracy": 74.25,
+        "f1_macro": 74.21,
+        "f1_per_class": {
+          "neg": 73.25,
+          "pos": 75.18
+        }
+      },
+      {
+        "fold": 7,
+        "accuracy": 74.0,
+        "f1_macro": 73.99,
+        "f1_per_class": {
+          "neg": 74.51,
+          "pos": 73.47
+        }
+      },
+      {
+        "fold": 8,
+        "accuracy": 74.25,
+        "f1_macro": 74.25,
+        "f1_per_class": {
+          "neg": 74.44,
+          "pos": 74.06
+        }
+      },
+      {
+        "fold": 9,
+        "accuracy": 75.75,
+        "f1_macro": 75.74,
+        "f1_per_class": {
+          "neg": 76.28,
+          "pos": 75.19
+        }
+      },
+      {
+        "fold": 10,
+        "accuracy": 77.5,
+        "f1_macro": 77.48,
+        "f1_per_class": {
+          "neg": 76.8,
+          "pos": 78.16
+        }
+      }
+    ],
+    "training_time": 625.9
+  },
+  {
+    "model": "xlm_roberta",
+    "model_path": "xlm-roberta-base",
+    "dataset": "sudsenti2",
+    "method": "10-fold CV",
+    "num_classes": 2,
+    "labels": [
+      "neg",
+      "pos"
+    ],
+    "total_samples": 4001,
+    "accuracy": 65.08,
+    "accuracy_std": 6.01,
+    "f1_macro": 64.07,
+    "f1_macro_std": 7.53,
+    "f1_per_class": {
+      "neg": 59.58,
+      "pos": 68.57
+    },
+    "fold_results": [
+      {
+        "fold": 1,
+        "accuracy": 70.07,
+        "f1_macro": 70.07,
+        "f1_per_class": {
+          "neg": 69.85,
+          "pos": 70.3
+        }
+      },
+      {
+        "fold": 2,
+        "accuracy": 73.5,
+        "f1_macro": 73.5,
+        "f1_per_class": {
+          "neg": 73.23,
+          "pos": 73.76
+        }
+      },
+      {
+        "fold": 3,
+        "accuracy": 69.75,
+        "f1_macro": 69.65,
+        "f1_per_class": {
+          "neg": 67.9,
+          "pos": 71.39
+        }
+      },
+      {
+        "fold": 4,
+        "accuracy": 64.25,
+        "f1_macro": 64.21,
+        "f1_per_class": {
+          "neg": 63.05,
+          "pos": 65.38
+        }
+      },
+      {
+        "fold": 5,
+        "accuracy": 53.5,
+        "f1_macro": 47.62,
+        "f1_per_class": {
+          "neg": 30.08,
+          "pos": 65.17
+        }
+      },
+      {
+        "fold": 6,
+        "accuracy": 70.75,
+        "f1_macro": 70.47,
+        "f1_per_class": {
+          "neg": 67.59,
+          "pos": 73.35
+        }
+      },
+      {
+        "fold": 7,
+        "accuracy": 64.5,
+        "f1_macro": 64.24,
+        "f1_per_class": {
+          "neg": 61.2,
+          "pos": 67.28
+        }
+      },
+      {
+        "fold": 8,
+        "accuracy": 59.5,
+        "f1_macro": 59.24,
+        "f1_per_class": {
+          "neg": 55.98,
+          "pos": 62.5
+        }
+      },
+      {
+        "fold": 9,
+        "accuracy": 58.5,
+        "f1_macro": 55.61,
+        "f1_per_class": {
+          "neg": 44.3,
+          "pos": 66.93
+        }
+      },
+      {
+        "fold": 10,
+        "accuracy": 66.5,
+        "f1_macro": 66.13,
+        "f1_per_class": {
+          "neg": 62.57,
+          "pos": 69.68
+        }
+      }
+    ],
+    "training_time": 871.0
+  },
+  {
+    "model": "mbert",
+    "model_path": "bert-base-multilingual-cased",
+    "dataset": "sudsenti2",
+    "method": "10-fold CV",
+    "num_classes": 2,
+    "labels": [
+      "neg",
+      "pos"
+    ],
+    "total_samples": 4001,
+    "accuracy": 69.68,
+    "accuracy_std": 2.32,
+    "f1_macro": 69.64,
+    "f1_macro_std": 2.34,
+    "f1_per_class": {
+      "neg": 68.9,
+      "pos": 70.37
+    },
+    "fold_results": [
+      {
+        "fold": 1,
+        "accuracy": 70.57,
+        "f1_macro": 70.48,
+        "f1_per_class": {
+          "neg": 72.17,
+          "pos": 68.78
+        }
+      },
+      {
+        "fold": 2,
+        "accuracy": 74.5,
+        "f1_macro": 74.49,
+        "f1_per_class": {
+          "neg": 73.98,
+          "pos": 75.0
+        }
+      },
+      {
+        "fold": 3,
+        "accuracy": 71.0,
+        "f1_macro": 70.94,
+        "f1_per_class": {
+          "neg": 69.63,
+          "pos": 72.25
+        }
+      },
+      {
+        "fold": 4,
+        "accuracy": 67.75,
+        "f1_macro": 67.72,
+        "f1_per_class": {
+          "neg": 66.67,
+          "pos": 68.77
+        }
+      },
+      {
+        "fold": 5,
+        "accuracy": 70.0,
+        "f1_macro": 69.98,
+        "f1_per_class": {
+          "neg": 69.23,
+          "pos": 70.73
+        }
+      },
+      {
+        "fold": 6,
+        "accuracy": 66.5,
+        "f1_macro": 66.34,
+        "f1_per_class": {
+          "neg": 63.98,
+          "pos": 68.69
+        }
+      },
+      {
+        "fold": 7,
+        "accuracy": 72.0,
+        "f1_macro": 71.96,
+        "f1_per_class": {
+          "neg": 70.83,
+          "pos": 73.08
+        }
+      },
+      {
+        "fold": 8,
+        "accuracy": 68.75,
+        "f1_macro": 68.75,
+        "f1_per_class": {
+          "neg": 68.83,
+          "pos": 68.67
+        }
+      },
+      {
+        "fold": 9,
+        "accuracy": 67.0,
+        "f1_macro": 66.97,
+        "f1_per_class": {
+          "neg": 65.98,
+          "pos": 67.96
+        }
+      },
+      {
+        "fold": 10,
+        "accuracy": 68.75,
+        "f1_macro": 68.72,
+        "f1_per_class": {
+          "neg": 67.7,
+          "pos": 69.73
+        }
+      }
+    ],
+    "training_time": 705.8
+  },
+  {
+    "model": "marbertv2",
+    "model_path": "UBC-NLP/MARBERTv2",
+    "dataset": "sudsenti3",
+    "method": "10-fold CV",
+    "num_classes": 3,
+    "labels": [
+      "neg",
+      "obj",
+      "pos"
+    ],
+    "total_samples": 6957,
+    "accuracy": 85.45,
+    "accuracy_std": 1.36,
+    "f1_macro": 85.16,
+    "f1_macro_std": 1.35,
+    "f1_per_class": {
+      "neg": 86.64,
+      "obj": 82.13,
+      "pos": 86.72
+    },
+    "fold_results": [
+      {
+        "fold": 1,
+        "accuracy": 85.34,
+        "f1_macro": 84.87,
+        "f1_per_class": {
+          "neg": 87.24,
+          "obj": 80.22,
+          "pos": 87.15
+        }
+      },
+      {
+        "fold": 2,
+        "accuracy": 85.49,
+        "f1_macro": 85.21,
+        "f1_per_class": {
+          "neg": 86.86,
+          "obj": 82.23,
+          "pos": 86.53
+        }
+      },
+      {
+        "fold": 3,
+        "accuracy": 83.19,
+        "f1_macro": 82.6,
+        "f1_per_class": {
+          "neg": 86.47,
+          "obj": 77.09,
+          "pos": 84.25
+        }
+      },
+      {
+        "fold": 4,
+        "accuracy": 86.49,
+        "f1_macro": 86.23,
+        "f1_per_class": {
+          "neg": 87.62,
+          "obj": 82.78,
+          "pos": 88.28
+        }
+      },
+      {
+        "fold": 5,
+        "accuracy": 86.78,
+        "f1_macro": 86.47,
+        "f1_per_class": {
+          "neg": 86.73,
+          "obj": 82.94,
+          "pos": 89.72
+        }
+      },
+      {
+        "fold": 6,
+        "accuracy": 83.76,
+        "f1_macro": 83.61,
+        "f1_per_class": {
+          "neg": 84.5,
+          "obj": 81.52,
+          "pos": 84.82
+        }
+      },
+      {
+        "fold": 7,
+        "accuracy": 87.79,
+        "f1_macro": 87.39,
+        "f1_per_class": {
+          "neg": 90.35,
+          "obj": 83.03,
+          "pos": 88.8
+        }
+      },
+      {
+        "fold": 8,
+        "accuracy": 86.19,
+        "f1_macro": 85.9,
+        "f1_per_class": {
+          "neg": 87.73,
+          "obj": 83.43,
+          "pos": 86.53
+        }
+      },
+      {
+        "fold": 9,
+        "accuracy": 84.17,
+        "f1_macro": 84.3,
+        "f1_per_class": {
+          "neg": 83.4,
+          "obj": 85.56,
+          "pos": 83.92
+        }
+      },
+      {
+        "fold": 10,
+        "accuracy": 85.32,
+        "f1_macro": 85.07,
+        "f1_per_class": {
+          "neg": 85.49,
+          "obj": 82.48,
+          "pos": 87.25
+        }
+      }
+    ],
+    "training_time": 1206.4
+  },
+  {
+    "model": "marbert",
+    "model_path": "UBC-NLP/MARBERT",
+    "dataset": "sudsenti3",
+    "method": "10-fold CV",
+    "num_classes": 3,
+    "labels": [
+      "neg",
+      "obj",
+      "pos"
+    ],
+    "total_samples": 6957,
+    "accuracy": 86.9,
+    "accuracy_std": 0.98,
+    "f1_macro": 86.7,
+    "f1_macro_std": 0.95,
+    "f1_per_class": {
+      "neg": 87.91,
+      "obj": 84.39,
+      "pos": 87.8
+    },
+    "fold_results": [
+      {
+        "fold": 1,
+        "accuracy": 86.49,
+        "f1_macro": 86.2,
+        "f1_per_class": {
+          "neg": 86.86,
+          "obj": 82.76,
+          "pos": 88.98
+        }
+      },
+      {
+        "fold": 2,
+        "accuracy": 86.93,
+        "f1_macro": 86.68,
+        "f1_per_class": {
+          "neg": 88.06,
+          "obj": 84.18,
+          "pos": 87.8
+        }
+      },
+      {
+        "fold": 3,
+        "accuracy": 87.07,
+        "f1_macro": 86.85,
+        "f1_per_class": {
+          "neg": 89.15,
+          "obj": 84.13,
+          "pos": 87.27
+        }
+      },
+      {
+        "fold": 4,
+        "accuracy": 88.36,
+        "f1_macro": 88.13,
+        "f1_per_class": {
+          "neg": 90.35,
+          "obj": 85.28,
+          "pos": 88.75
+        }
+      },
+      {
+        "fold": 5,
+        "accuracy": 87.07,
+        "f1_macro": 86.84,
+        "f1_per_class": {
+          "neg": 88.16,
+          "obj": 83.76,
+          "pos": 88.61
+        }
+      },
+      {
+        "fold": 6,
+        "accuracy": 86.35,
+        "f1_macro": 86.25,
+        "f1_per_class": {
+          "neg": 86.77,
+          "obj": 84.97,
+          "pos": 86.99
+        }
+      },
+      {
+        "fold": 7,
+        "accuracy": 88.36,
+        "f1_macro": 88.03,
+        "f1_per_class": {
+          "neg": 89.35,
+          "obj": 84.21,
+          "pos": 90.53
+        }
+      },
+      {
+        "fold": 8,
+        "accuracy": 86.19,
+        "f1_macro": 86.04,
+        "f1_per_class": {
+          "neg": 86.88,
+          "obj": 84.76,
+          "pos": 86.48
+        }
+      },
+      {
+        "fold": 9,
+        "accuracy": 87.34,
+        "f1_macro": 87.28,
+        "f1_per_class": {
+          "neg": 88.17,
+          "obj": 86.82,
+          "pos": 86.85
+        }
+      },
+      {
+        "fold": 10,
+        "accuracy": 84.89,
+        "f1_macro": 84.73,
+        "f1_per_class": {
+          "neg": 85.38,
+          "obj": 83.02,
+          "pos": 85.77
+        }
+      }
+    ],
+    "training_time": 1240.0
+  },
+  {
+    "model": "arbert",
+    "model_path": "UBC-NLP/ARBERT",
+    "dataset": "sudsenti3",
+    "method": "10-fold CV",
+    "num_classes": 3,
+    "labels": [
+      "neg",
+      "obj",
+      "pos"
+    ],
+    "total_samples": 6957,
+    "accuracy": 86.19,
+    "accuracy_std": 1.23,
+    "f1_macro": 85.96,
+    "f1_macro_std": 1.29,
+    "f1_per_class": {
+      "neg": 87.25,
+      "obj": 83.47,
+      "pos": 87.15
+    },
+    "fold_results": [
+      {
+        "fold": 1,
+        "accuracy": 85.92,
+        "f1_macro": 85.56,
+        "f1_per_class": {
+          "neg": 86.97,
+          "obj": 81.04,
+          "pos": 88.66
+        }
+      },
+      {
+        "fold": 2,
+        "accuracy": 83.76,
+        "f1_macro": 83.38,
+        "f1_per_class": {
+          "neg": 85.55,
+          "obj": 79.16,
+          "pos": 85.43
+        }
+      },
+      {
+        "fold": 3,
+        "accuracy": 85.06,
+        "f1_macro": 84.71,
+        "f1_per_class": {
+          "neg": 87.89,
+          "obj": 81.3,
+          "pos": 84.93
+        }
+      },
+      {
+        "fold": 4,
+        "accuracy": 87.21,
+        "f1_macro": 87.08,
+        "f1_per_class": {
+          "neg": 87.38,
+          "obj": 85.49,
+          "pos": 88.38
+        }
+      },
+      {
+        "fold": 5,
+        "accuracy": 87.79,
+        "f1_macro": 87.49,
+        "f1_per_class": {
+          "neg": 88.71,
+          "obj": 84.21,
+          "pos": 89.55
+        }
+      },
+      {
+        "fold": 6,
+        "accuracy": 85.06,
+        "f1_macro": 84.87,
+        "f1_per_class": {
+          "neg": 85.99,
+          "obj": 82.56,
+          "pos": 86.07
+        }
+      },
+      {
+        "fold": 7,
+        "accuracy": 87.64,
+        "f1_macro": 87.33,
+        "f1_per_class": {
+          "neg": 89.31,
+          "obj": 84.32,
+          "pos": 88.35
+        }
+      },
+      {
+        "fold": 8,
+        "accuracy": 86.47,
+        "f1_macro": 86.4,
+        "f1_per_class": {
+          "neg": 86.87,
+          "obj": 85.71,
+          "pos": 86.63
+        }
+      },
+      {
+        "fold": 9,
+        "accuracy": 87.05,
+        "f1_macro": 87.07,
+        "f1_per_class": {
+          "neg": 86.55,
+          "obj": 87.18,
+          "pos": 87.47
+        }
+      },
+      {
+        "fold": 10,
+        "accuracy": 85.9,
+        "f1_macro": 85.69,
+        "f1_per_class": {
+          "neg": 87.26,
+          "obj": 83.75,
+          "pos": 86.05
+        }
+      }
+    ],
+    "training_time": 1242.7
+  },
+  {
+    "model": "arabertv2",
+    "model_path": "aubmindlab/bert-base-arabertv02",
+    "dataset": "sudsenti3",
+    "method": "10-fold CV",
+    "num_classes": 3,
+    "labels": [
+      "neg",
+      "obj",
+      "pos"
+    ],
+    "total_samples": 6957,
+    "accuracy": 84.52,
+    "accuracy_std": 1.02,
+    "f1_macro": 84.17,
+    "f1_macro_std": 1.06,
+    "f1_per_class": {
+      "neg": 85.93,
+      "obj": 80.78,
+      "pos": 85.8
+    },
+    "fold_results": [
+      {
+        "fold": 1,
+        "accuracy": 83.05,
+        "f1_macro": 82.53,
+        "f1_per_class": {
+          "neg": 85.38,
+          "obj": 77.42,
+          "pos": 84.8
+        }
+      },
+      {
+        "fold": 2,
+        "accuracy": 84.63,
+        "f1_macro": 84.12,
+        "f1_per_class": {
+          "neg": 85.39,
+          "obj": 79.12,
+          "pos": 87.85
+        }
+      },
+      {
+        "fold": 3,
+        "accuracy": 83.48,
+        "f1_macro": 83.0,
+        "f1_per_class": {
+          "neg": 87.74,
+          "obj": 78.71,
+          "pos": 82.57
+        }
+      },
+      {
+        "fold": 4,
+        "accuracy": 84.77,
+        "f1_macro": 84.19,
+        "f1_per_class": {
+          "neg": 87.31,
+          "obj": 78.49,
+          "pos": 86.78
+        }
+      },
+      {
+        "fold": 5,
+        "accuracy": 86.35,
+        "f1_macro": 86.07,
+        "f1_per_class": {
+          "neg": 87.38,
+          "obj": 83.38,
+          "pos": 87.45
+        }
+      },
+      {
+        "fold": 6,
+        "accuracy": 83.62,
+        "f1_macro": 83.39,
+        "f1_per_class": {
+          "neg": 83.46,
+          "obj": 80.53,
+          "pos": 86.18
+        }
+      },
+      {
+        "fold": 7,
+        "accuracy": 85.92,
+        "f1_macro": 85.44,
+        "f1_per_class": {
+          "neg": 87.4,
+          "obj": 80.87,
+          "pos": 88.05
+        }
+      },
+      {
+        "fold": 8,
+        "accuracy": 83.74,
+        "f1_macro": 83.48,
+        "f1_per_class": {
+          "neg": 84.81,
+          "obj": 81.23,
+          "pos": 84.38
+        }
+      },
+      {
+        "fold": 9,
+        "accuracy": 85.04,
+        "f1_macro": 85.03,
+        "f1_per_class": {
+          "neg": 85.55,
+          "obj": 85.19,
+          "pos": 84.36
+        }
+      },
+      {
+        "fold": 10,
+        "accuracy": 84.6,
+        "f1_macro": 84.46,
+        "f1_per_class": {
+          "neg": 84.88,
+          "obj": 82.89,
+          "pos": 85.6
+        }
+      }
+    ],
+    "training_time": 1128.8
+  },
+  {
+    "model": "camelbert_da",
+    "model_path": "CAMeL-Lab/bert-base-arabic-camelbert-da",
+    "dataset": "sudsenti3",
+    "method": "10-fold CV",
+    "num_classes": 3,
+    "labels": [
+      "neg",
+      "obj",
+      "pos"
+    ],
+    "total_samples": 6957,
+    "accuracy": 86.09,
+    "accuracy_std": 1.0,
+    "f1_macro": 85.9,
+    "f1_macro_std": 1.02,
+    "f1_per_class": {
+      "neg": 86.73,
+      "obj": 83.82,
+      "pos": 87.14
+    },
+    "fold_results": [
+      {
+        "fold": 1,
+        "accuracy": 86.21,
+        "f1_macro": 85.97,
+        "f1_per_class": {
+          "neg": 86.32,
+          "obj": 83.29,
+          "pos": 88.31
+        }
+      },
+      {
+        "fold": 2,
+        "accuracy": 84.63,
+        "f1_macro": 84.35,
+        "f1_per_class": {
+          "neg": 85.34,
+          "obj": 81.17,
+          "pos": 86.54
+        }
+      },
+      {
+        "fold": 3,
+        "accuracy": 85.2,
+        "f1_macro": 84.98,
+        "f1_per_class": {
+          "neg": 85.88,
+          "obj": 82.67,
+          "pos": 86.4
+        }
+      },
+      {
+        "fold": 4,
+        "accuracy": 86.64,
+        "f1_macro": 86.47,
+        "f1_per_class": {
+          "neg": 87.02,
+          "obj": 84.1,
+          "pos": 88.28
+        }
+      },
+      {
+        "fold": 5,
+        "accuracy": 85.92,
+        "f1_macro": 85.52,
+        "f1_per_class": {
+          "neg": 86.84,
+          "obj": 81.62,
+          "pos": 88.11
+        }
+      },
+      {
+        "fold": 6,
+        "accuracy": 85.34,
+        "f1_macro": 85.22,
+        "f1_per_class": {
+          "neg": 86.43,
+          "obj": 83.85,
+          "pos": 85.37
+        }
+      },
+      {
+        "fold": 7,
+        "accuracy": 88.22,
+        "f1_macro": 87.96,
+        "f1_per_class": {
+          "neg": 89.79,
+          "obj": 85.12,
+          "pos": 88.98
+        }
+      },
+      {
+        "fold": 8,
+        "accuracy": 87.05,
+        "f1_macro": 86.95,
+        "f1_per_class": {
+          "neg": 87.33,
+          "obj": 85.95,
+          "pos": 87.58
+        }
+      },
+      {
+        "fold": 9,
+        "accuracy": 86.33,
+        "f1_macro": 86.39,
+        "f1_per_class": {
+          "neg": 86.1,
+          "obj": 87.24,
+          "pos": 85.83
+        }
+      },
+      {
+        "fold": 10,
+        "accuracy": 85.32,
+        "f1_macro": 85.14,
+        "f1_per_class": {
+          "neg": 86.22,
+          "obj": 83.2,
+          "pos": 86.0
+        }
+      }
+    ],
+    "training_time": 1105.8
+  },
+  {
+    "model": "qarib",
+    "model_path": "qarib/bert-base-qarib",
+    "dataset": "sudsenti3",
+    "method": "10-fold CV",
+    "num_classes": 3,
+    "labels": [
+      "neg",
+      "obj",
+      "pos"
+    ],
+    "total_samples": 6957,
+    "accuracy": 87.04,
+    "accuracy_std": 1.07,
+    "f1_macro": 86.77,
+    "f1_macro_std": 1.12,
+    "f1_per_class": {
+      "neg": 88.26,
+      "obj": 83.88,
+      "pos": 88.16
+    },
+    "fold_results": [
+      {
+        "fold": 1,
+        "accuracy": 85.34,
+        "f1_macro": 84.91,
+        "f1_per_class": {
+          "neg": 86.82,
+          "obj": 80.32,
+          "pos": 87.6
+        }
+      },
+      {
+        "fold": 2,
+        "accuracy": 86.06,
+        "f1_macro": 85.64,
+        "f1_per_class": {
+          "neg": 88.43,
+          "obj": 81.62,
+          "pos": 86.87
+        }
+      },
+      {
+        "fold": 3,
+        "accuracy": 86.21,
+        "f1_macro": 85.85,
+        "f1_per_class": {
+          "neg": 87.95,
+          "obj": 82.26,
+          "pos": 87.32
+        }
+      },
+      {
+        "fold": 4,
+        "accuracy": 87.21,
+        "f1_macro": 86.91,
+        "f1_per_class": {
+          "neg": 88.76,
+          "obj": 83.2,
+          "pos": 88.75
+        }
+      },
+      {
+        "fold": 5,
+        "accuracy": 87.07,
+        "f1_macro": 86.94,
+        "f1_per_class": {
+          "neg": 88.35,
+          "obj": 85.49,
+          "pos": 86.99
+        }
+      },
+      {
+        "fold": 6,
+        "accuracy": 86.64,
+        "f1_macro": 86.46,
+        "f1_per_class": {
+          "neg": 86.67,
+          "obj": 84.24,
+          "pos": 88.48
+        }
+      },
+      {
+        "fold": 7,
+        "accuracy": 89.51,
+        "f1_macro": 89.19,
+        "f1_per_class": {
+          "neg": 90.8,
+          "obj": 85.42,
+          "pos": 91.35
+        }
+      },
+      {
+        "fold": 8,
+        "accuracy": 87.63,
+        "f1_macro": 87.47,
+        "f1_per_class": {
+          "neg": 88.43,
+          "obj": 85.95,
+          "pos": 88.03
+        }
+      },
+      {
+        "fold": 9,
+        "accuracy": 87.05,
+        "f1_macro": 86.94,
+        "f1_per_class": {
+          "neg": 88.12,
+          "obj": 85.79,
+          "pos": 86.9
+        }
+      },
+      {
+        "fold": 10,
+        "accuracy": 87.63,
+        "f1_macro": 87.35,
+        "f1_per_class": {
+          "neg": 88.28,
+          "obj": 84.49,
+          "pos": 89.29
+        }
+      }
+    ],
+    "training_time": 1147.7
+  },
+  {
+    "model": "sudabert_v2",
+    "model_path": "/home/macierz/mohabdal/sudanese_dialect_project/models/sudabert_v2/sudabert_v2/",
+    "dataset": "sudsenti3",
+    "method": "10-fold CV",
+    "num_classes": 3,
+    "labels": [
+      "neg",
+      "obj",
+      "pos"
+    ],
+    "total_samples": 6957,
+    "accuracy": 87.09,
+    "accuracy_std": 0.86,
+    "f1_macro": 86.92,
+    "f1_macro_std": 0.8,
+    "f1_per_class": {
+      "neg": 87.78,
+      "obj": 85.11,
+      "pos": 87.86
+    },
+    "fold_results": [
+      {
+        "fold": 1,
+        "accuracy": 86.93,
+        "f1_macro": 86.67,
+        "f1_per_class": {
+          "neg": 86.97,
+          "obj": 84.01,
+          "pos": 89.02
+        }
+      },
+      {
+        "fold": 2,
+        "accuracy": 88.07,
+        "f1_macro": 87.79,
+        "f1_per_class": {
+          "neg": 88.25,
+          "obj": 84.86,
+          "pos": 90.26
+        }
+      },
+      {
+        "fold": 3,
+        "accuracy": 86.64,
+        "f1_macro": 86.43,
+        "f1_per_class": {
+          "neg": 87.98,
+          "obj": 84.41,
+          "pos": 86.9
+        }
+      },
+      {
+        "fold": 4,
+        "accuracy": 88.79,
+        "f1_macro": 88.47,
+        "f1_per_class": {
+          "neg": 91.36,
+          "obj": 85.26,
+          "pos": 88.8
+        }
+      },
+      {
+        "fold": 5,
+        "accuracy": 87.79,
+        "f1_macro": 87.64,
+        "f1_per_class": {
+          "neg": 87.84,
+          "obj": 86.1,
+          "pos": 88.98
+        }
+      },
+      {
+        "fold": 6,
+        "accuracy": 85.92,
+        "f1_macro": 85.79,
+        "f1_per_class": {
+          "neg": 86.21,
+          "obj": 84.29,
+          "pos": 86.87
+        }
+      },
+      {
+        "fold": 7,
+        "accuracy": 86.93,
+        "f1_macro": 86.7,
+        "f1_per_class": {
+          "neg": 88.89,
+          "obj": 84.16,
+          "pos": 87.04
+        }
+      },
+      {
+        "fold": 8,
+        "accuracy": 87.34,
+        "f1_macro": 87.24,
+        "f1_per_class": {
+          "neg": 87.62,
+          "obj": 86.35,
+          "pos": 87.76
+        }
+      },
+      {
+        "fold": 9,
+        "accuracy": 86.19,
+        "f1_macro": 86.18,
+        "f1_per_class": {
+          "neg": 85.93,
+          "obj": 86.02,
+          "pos": 86.59
+        }
+      },
+      {
+        "fold": 10,
+        "accuracy": 86.33,
+        "f1_macro": 86.26,
+        "f1_per_class": {
+          "neg": 86.76,
+          "obj": 85.64,
+          "pos": 86.39
+        }
+      }
+    ],
+    "training_time": 1102.4
+  },
+  {
+    "model": "xlm_roberta",
+    "model_path": "xlm-roberta-base",
+    "dataset": "sudsenti3",
+    "method": "10-fold CV",
+    "num_classes": 3,
+    "labels": [
+      "neg",
+      "obj",
+      "pos"
+    ],
+    "total_samples": 6957,
+    "accuracy": 77.66,
+    "accuracy_std": 1.2,
+    "f1_macro": 77.34,
+    "f1_macro_std": 1.24,
+    "f1_per_class": {
+      "neg": 79.03,
+      "obj": 73.56,
+      "pos": 79.42
+    },
+    "fold_results": [
+      {
+        "fold": 1,
+        "accuracy": 76.72,
+        "f1_macro": 76.37,
+        "f1_per_class": {
+          "neg": 78.38,
+          "obj": 71.79,
+          "pos": 78.93
+        }
+      },
+      {
+        "fold": 2,
+        "accuracy": 77.87,
+        "f1_macro": 77.25,
+        "f1_per_class": {
+          "neg": 79.69,
+          "obj": 71.67,
+          "pos": 80.39
+        }
+      },
+      {
+        "fold": 3,
+        "accuracy": 78.88,
+        "f1_macro": 78.52,
+        "f1_per_class": {
+          "neg": 80.46,
+          "obj": 74.29,
+          "pos": 80.82
+        }
+      },
+      {
+        "fold": 4,
+        "accuracy": 77.44,
+        "f1_macro": 77.12,
+        "f1_per_class": {
+          "neg": 80.0,
+          "obj": 72.64,
+          "pos": 78.74
+        }
+      },
+      {
+        "fold": 5,
+        "accuracy": 78.59,
+        "f1_macro": 78.29,
+        "f1_per_class": {
+          "neg": 80.0,
+          "obj": 74.87,
+          "pos": 80.0
+        }
+      },
+      {
+        "fold": 6,
+        "accuracy": 79.45,
+        "f1_macro": 79.2,
+        "f1_per_class": {
+          "neg": 80.31,
+          "obj": 75.57,
+          "pos": 81.72
+        }
+      },
+      {
+        "fold": 7,
+        "accuracy": 74.86,
+        "f1_macro": 74.4,
+        "f1_per_class": {
+          "neg": 76.53,
+          "obj": 69.29,
+          "pos": 77.38
+        }
+      },
+      {
+        "fold": 8,
+        "accuracy": 77.84,
+        "f1_macro": 77.58,
+        "f1_per_class": {
+          "neg": 78.42,
+          "obj": 74.8,
+          "pos": 79.51
+        }
+      },
+      {
+        "fold": 9,
+        "accuracy": 77.41,
+        "f1_macro": 77.25,
+        "f1_per_class": {
+          "neg": 77.78,
+          "obj": 75.2,
+          "pos": 78.76
+        }
+      },
+      {
+        "fold": 10,
+        "accuracy": 77.55,
+        "f1_macro": 77.38,
+        "f1_per_class": {
+          "neg": 78.69,
+          "obj": 75.52,
+          "pos": 77.94
+        }
+      }
+    ],
+    "training_time": 1506.0
+  },
+  {
+    "model": "mbert",
+    "model_path": "bert-base-multilingual-cased",
+    "dataset": "sudsenti3",
+    "method": "10-fold CV",
+    "num_classes": 3,
+    "labels": [
+      "neg",
+      "obj",
+      "pos"
+    ],
+    "total_samples": 6957,
+    "accuracy": 82.26,
+    "accuracy_std": 0.85,
+    "f1_macro": 81.99,
+    "f1_macro_std": 0.93,
+    "f1_per_class": {
+      "neg": 83.36,
+      "obj": 79.17,
+      "pos": 83.45
+    },
+    "fold_results": [
+      {
+        "fold": 1,
+        "accuracy": 80.46,
+        "f1_macro": 80.11,
+        "f1_per_class": {
+          "neg": 82.8,
+          "obj": 76.72,
+          "pos": 80.82
+        }
+      },
+      {
+        "fold": 2,
+        "accuracy": 82.76,
+        "f1_macro": 82.48,
+        "f1_per_class": {
+          "neg": 83.91,
+          "obj": 79.07,
+          "pos": 84.47
+        }
+      },
+      {
+        "fold": 3,
+        "accuracy": 82.9,
+        "f1_macro": 82.49,
+        "f1_per_class": {
+          "neg": 83.12,
+          "obj": 78.53,
+          "pos": 85.83
+        }
+      },
+      {
+        "fold": 4,
+        "accuracy": 82.76,
+        "f1_macro": 82.5,
+        "f1_per_class": {
+          "neg": 83.59,
+          "obj": 79.58,
+          "pos": 84.34
+        }
+      },
+      {
+        "fold": 5,
+        "accuracy": 82.04,
+        "f1_macro": 81.69,
+        "f1_per_class": {
+          "neg": 82.58,
+          "obj": 78.07,
+          "pos": 84.42
+        }
+      },
+      {
+        "fold": 6,
+        "accuracy": 82.04,
+        "f1_macro": 81.89,
+        "f1_per_class": {
+          "neg": 83.07,
+          "obj": 80.0,
+          "pos": 82.59
+        }
+      },
+      {
+        "fold": 7,
+        "accuracy": 82.47,
+        "f1_macro": 82.34,
+        "f1_per_class": {
+          "neg": 83.52,
+          "obj": 80.82,
+          "pos": 82.67
+        }
+      },
+      {
+        "fold": 8,
+        "accuracy": 81.01,
+        "f1_macro": 80.48,
+        "f1_per_class": {
+          "neg": 82.65,
+          "obj": 75.34,
+          "pos": 83.46
+        }
+      },
+      {
+        "fold": 9,
+        "accuracy": 83.02,
+        "f1_macro": 82.85,
+        "f1_per_class": {
+          "neg": 84.73,
+          "obj": 81.42,
+          "pos": 82.4
+        }
+      },
+      {
+        "fold": 10,
+        "accuracy": 83.17,
+        "f1_macro": 83.08,
+        "f1_per_class": {
+          "neg": 83.62,
+          "obj": 82.11,
+          "pos": 83.5
+        }
+      }
+    ],
+    "training_time": 1242.9
+  }
+]

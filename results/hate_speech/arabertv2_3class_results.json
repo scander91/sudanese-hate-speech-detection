@@ -1,0 +1,76 @@
+{
+  "experiment_id": "arabertv2_3class",
+  "model_name": "arabertv2",
+  "model_path": "aubmindlab/bert-base-arabertv02",
+  "dataset_name": "3class",
+  "num_labels": 3,
+  "label_names": [
+    "HATE",
+    "OFFENSIVE",
+    "NEUTRAL"
+  ],
+  "train_size": 32000,
+  "val_size": 4000,
+  "test_size": 4000,
+  "accuracy": 0.8243,
+  "f1_macro": 0.7838,
+  "f1_weighted": 0.8231,
+  "per_class_f1": {
+    "HATE": 0.7701,
+    "OFFENSIVE": 0.6941,
+    "NEUTRAL": 0.8873
+  },
+  "confusion_matrix": [
+    [
+      561,
+      90,
+      92
+    ],
+    [
+      70,
+      599,
+      209
+    ],
+    [
+      83,
+      159,
+      2137
+    ]
+  ],
+  "classification_report": {
+    "HATE": {
+      "precision": 0.7857142857142857,
+      "recall": 0.7550471063257066,
+      "f1-score": 0.7700754975978037,
+      "support": 743.0
+    },
+    "OFFENSIVE": {
+      "precision": 0.7063679245283019,
+      "recall": 0.6822323462414579,
+      "f1-score": 0.694090382387022,
+      "support": 878.0
+    },
+    "NEUTRAL": {
+      "precision": 0.876538146021329,
+      "recall": 0.898276586801177,
+      "f1-score": 0.8872742370770189,
+      "support": 2379.0
+    },
+    "accuracy": 0.82425,
+    "macro avg": {
+      "precision": 0.7895401187546388,
+      "recall": 0.7785186797894471,
+      "f1-score": 0.7838133723539483,
+      "support": 4000.0
+    },
+    "weighted avg": {
+      "precision": 0.8223152503515762,
+      "recall": 0.82425,
+      "f1-score": 0.8231007151143005,
+      "support": 4000.0
+    }
+  },
+  "train_time_seconds": 532.7,
+  "model_params_M": 135.2,
+  "timestamp": "2026-03-31T16:10:18.701674"
+}

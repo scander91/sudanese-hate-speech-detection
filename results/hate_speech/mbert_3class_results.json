@@ -1,0 +1,76 @@
+{
+  "experiment_id": "mbert_3class",
+  "model_name": "mbert",
+  "model_path": "bert-base-multilingual-cased",
+  "dataset_name": "3class",
+  "num_labels": 3,
+  "label_names": [
+    "HATE",
+    "OFFENSIVE",
+    "NEUTRAL"
+  ],
+  "train_size": 32000,
+  "val_size": 4000,
+  "test_size": 4000,
+  "accuracy": 0.793,
+  "f1_macro": 0.7416,
+  "f1_weighted": 0.7868,
+  "per_class_f1": {
+    "HATE": 0.7396,
+    "OFFENSIVE": 0.6236,
+    "NEUTRAL": 0.8617
+  },
+  "confusion_matrix": [
+    [
+      527,
+      57,
+      159
+    ],
+    [
+      80,
+      492,
+      306
+    ],
+    [
+      75,
+      151,
+      2153
+    ]
+  ],
+  "classification_report": {
+    "HATE": {
+      "precision": 0.7727272727272727,
+      "recall": 0.7092866756393001,
+      "f1-score": 0.7396491228070176,
+      "support": 743.0
+    },
+    "OFFENSIVE": {
+      "precision": 0.7028571428571428,
+      "recall": 0.5603644646924829,
+      "f1-score": 0.623574144486692,
+      "support": 878.0
+    },
+    "NEUTRAL": {
+      "precision": 0.8223834988540871,
+      "recall": 0.9050021017234132,
+      "f1-score": 0.8617170302181308,
+      "support": 2379.0
+    },
+    "accuracy": 0.793,
+    "macro avg": {
+      "precision": 0.7659893048128342,
+      "recall": 0.7248844140183989,
+      "f1-score": 0.7416467658372801,
+      "support": 4000.0
+    },
+    "weighted avg": {
+      "precision": 0.786923819709702,
+      "recall": 0.793,
+      "f1-score": 0.7867705529984658,
+      "support": 4000.0
+    }
+  },
+  "train_time_seconds": 721.5,
+  "model_params_M": 177.9,
+  "timestamp": "2026-03-31T17:21:17.319495"
+}

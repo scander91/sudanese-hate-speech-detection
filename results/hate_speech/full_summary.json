@@ -1,0 +1,1577 @@
+[
+  {
+    "experiment_id": "ensemble_3class",
+    "approach": "ensemble",
+    "ensemble_members": [
+      "arabertv2",
+      "marbertv2",
+      "sudabert_v2"
+    ],
+    "ensemble_weights": [
+      0.3354,
+      0.3338,
+      0.3308
+    ],
+    "best_strategy": "weighted_average",
+    "dataset_name": "3class",
+    "num_labels": 3,
+    "label_names": [
+      "HATE",
+      "OFFENSIVE",
+      "NEUTRAL"
+    ],
+    "test_size": 4000,
+    "weighted_avg_f1": 0.8019,
+    "majority_vote_f1": 0.7978,
+    "accuracy": 0.841,
+    "f1_macro": 0.8019,
+    "f1_weighted": 0.8386,
+    "per_class_f1": {
+      "HATE": 0.7868,
+      "OFFENSIVE": 0.7208,
+      "NEUTRAL": 0.8983
+    },
+    "confusion_matrix": [
+      [
+        583,
+        60,
+        100
+      ],
+      [
+        81,
+        595,
+        202
+      ],
+      [
+        75,
+        118,
+        2186
+      ]
+    ],
+    "classification_report": {
+      "HATE": {
+        "precision": 0.7889039242219216,
+        "recall": 0.784656796769852,
+        "f1-score": 0.786774628879892,
+        "support": 743.0
+      },
+      "OFFENSIVE": {
+        "precision": 0.7697283311772316,
+        "recall": 0.6776765375854215,
+        "f1-score": 0.7207752877044216,
+        "support": 878.0
+      },
+      "NEUTRAL": {
+        "precision": 0.8786173633440515,
+        "recall": 0.9188734762505254,
+        "f1-score": 0.8982946373536059,
+        "support": 2379.0
+      },
+      "accuracy": 0.841,
+      "macro avg": {
+        "precision": 0.8124165395810682,
+        "recall": 0.7937356035352662,
+        "f1-score": 0.8019481846459732,
+        "support": 4000.0
+      },
+      "weighted avg": {
+        "precision": 0.8380519494664989,
+        "recall": 0.841,
+        "f1-score": 0.8386142985316176,
+        "support": 4000.0
+      }
+    },
+    "train_time_seconds": 33.0,
+    "timestamp": "2026-04-02T11:30:49.874248",
+    "display_name": "Ensemble(Top3)"
+  },
+  {
+    "experiment_id": "distill_sudabert_3class",
+    "approach": "knowledge_distillation",
+    "teacher": "arabertv2",
+    "teacher_f1": 0.7838,
+    "student": "sudabert_v1",
+    "temperature": 4.0,
+    "alpha": 0.5,
+    "dataset_name": "3class",
+    "num_labels": 3,
+    "label_names": [
+      "HATE",
+      "OFFENSIVE",
+      "NEUTRAL"
+    ],
+    "train_size": 32000,
+    "val_size": 4000,
+    "test_size": 4000,
+    "best_val_f1": 0.7663,
+    "epochs_trained": 7,
+    "accuracy": 0.8287,
+    "f1_macro": 0.7872,
+    "f1_weighted": 0.826,
+    "per_class_f1": {
+      "HATE": 0.7657,
+      "OFFENSIVE": 0.7073,
+      "NEUTRAL": 0.8886
+    },
+    "confusion_matrix": [
+      [
+        536,
+        81,
+        126
+      ],
+      [
+        57,
+        598,
+        223
+      ],
+      [
+        64,
+        134,
+        2181
+      ]
+    ],
+    "classification_report": {
+      "HATE": {
+        "precision": 0.8158295281582952,
+        "recall": 0.721399730820996,
+        "f1-score": 0.7657142857142857,
+        "support": 743.0
+      },
+      "OFFENSIVE": {
+        "precision": 0.7355473554735548,
+        "recall": 0.6810933940774487,
+        "f1-score": 0.7072738024837374,
+        "support": 878.0
+      },
+      "NEUTRAL": {
+        "precision": 0.8620553359683795,
+        "recall": 0.9167717528373266,
+        "f1-score": 0.8885720105927888,
+        "support": 2379.0
+      },
+      "accuracy": 0.82875,
+      "macro avg": {
+        "precision": 0.8044774065334098,
+        "recall": 0.7730882925785904,
+        "f1-score": 0.7871866995969373,
+        "support": 4000.0
+      },
+      "weighted avg": {
+        "precision": 0.8257003904490423,
+        "recall": 0.82875,
+        "f1-score": 0.8259562315166701,
+        "support": 4000.0
+      }
+    },
+    "train_time_seconds": 1987.9,
+    "timestamp": "2026-04-02T12:03:57.782841",
+    "display_name": "SudaBERT-Distill"
+  },
+  {
+    "experiment_id": "arabertv2_3class",
+    "model_name": "arabertv2",
+    "model_path": "aubmindlab/bert-base-arabertv02",
+    "dataset_name": "3class",
+    "num_labels": 3,
+    "label_names": [
+      "HATE",
+      "OFFENSIVE",
+      "NEUTRAL"
+    ],
+    "train_size": 32000,
+    "val_size": 4000,
+    "test_size": 4000,
+    "accuracy": 0.8243,
+    "f1_macro": 0.7838,
+    "f1_weighted": 0.8231,
+    "per_class_f1": {
+      "HATE": 0.7701,
+      "OFFENSIVE": 0.6941,
+      "NEUTRAL": 0.8873
+    },
+    "confusion_matrix": [
+      [
+        561,
+        90,
+        92
+      ],
+      [
+        70,
+        599,
+        209
+      ],
+      [
+        83,
+        159,
+        2137
+      ]
+    ],
+    "classification_report": {
+      "HATE": {
+        "precision": 0.7857142857142857,
+        "recall": 0.7550471063257066,
+        "f1-score": 0.7700754975978037,
+        "support": 743.0
+      },
+      "OFFENSIVE": {
+        "precision": 0.7063679245283019,
+        "recall": 0.6822323462414579,
+        "f1-score": 0.694090382387022,
+        "support": 878.0
+      },
+      "NEUTRAL": {
+        "precision": 0.876538146021329,
+        "recall": 0.898276586801177,
+        "f1-score": 0.8872742370770189,
+        "support": 2379.0
+      },
+      "accuracy": 0.82425,
+      "macro avg": {
+        "precision": 0.7895401187546388,
+        "recall": 0.7785186797894471,
+        "f1-score": 0.7838133723539483,
+        "support": 4000.0
+      },
+      "weighted avg": {
+        "precision": 0.8223152503515762,
+        "recall": 0.82425,
+        "f1-score": 0.8231007151143005,
+        "support": 4000.0
+      }
+    },
+    "train_time_seconds": 532.7,
+    "model_params_M": 135.2,
+    "timestamp": "2026-03-31T16:10:18.701674",
+    "approach": "baseline",
+    "display_name": "arabertv2"
+  },
+  {
+    "experiment_id": "marbertv2_3class",
+    "model_name": "marbertv2",
+    "model_path": "UBC-NLP/MARBERTv2",
+    "dataset_name": "3class",
+    "num_labels": 3,
+    "label_names": [
+      "HATE",
+      "OFFENSIVE",
+      "NEUTRAL"
+    ],
+    "train_size": 32000,
+    "val_size": 4000,
+    "test_size": 4000,
+    "accuracy": 0.8245,
+    "f1_macro": 0.7799,
+    "f1_weighted": 0.8211,
+    "per_class_f1": {
+      "HATE": 0.767,
+      "OFFENSIVE": 0.6843,
+      "NEUTRAL": 0.8885
+    },
+    "confusion_matrix": [
+      [
+        571,
+        63,
+        109
+      ],
+      [
+        94,
+        555,
+        229
+      ],
+      [
+        81,
+        126,
+        2172
+      ]
+    ],
+    "classification_report": {
+      "HATE": {
+        "precision": 0.7654155495978552,
+        "recall": 0.7685060565275909,
+        "f1-score": 0.7669576897246474,
+        "support": 743.0
+      },
+      "OFFENSIVE": {
+        "precision": 0.7459677419354839,
+        "recall": 0.6321184510250569,
+        "f1-score": 0.6843403205918619,
+        "support": 878.0
+      },
+      "NEUTRAL": {
+        "precision": 0.8653386454183267,
+        "recall": 0.9129886506935687,
+        "f1-score": 0.8885252607895275,
+        "support": 2379.0
+      },
+      "accuracy": 0.8245,
+      "macro avg": {
+        "precision": 0.7922406456505553,
+        "recall": 0.7712043860820721,
+        "f1-score": 0.7799410903686791,
+        "support": 4000.0
+      },
+      "weighted avg": {
+        "precision": 0.8205760170551901,
+        "recall": 0.8245,
+        "f1-score": 0.8211254900908385,
+        "support": 4000.0
+      }
+    },
+    "train_time_seconds": 684.9,
+    "model_params_M": 162.8,
+    "timestamp": "2026-03-31T15:54:33.040574",
+    "approach": "baseline",
+    "display_name": "marbertv2"
+  },
+  {
+    "experiment_id": "bilstm_sudabert_3class",
+    "approach": "bilstm_attention",
+    "base_model": "sudabert_v1",
+    "dataset_name": "3class",
+    "num_labels": 3,
+    "label_names": [
+      "HATE",
+      "OFFENSIVE",
+      "NEUTRAL"
+    ],
+    "train_size": 32000,
+    "val_size": 4000,
+    "test_size": 4000,
+    "best_val_f1": 0.7627,
+    "epochs_trained": 8,
+    "accuracy": 0.8213,
+    "f1_macro": 0.7797,
+    "f1_weighted": 0.8195,
+    "per_class_f1": {
+      "HATE": 0.7578,
+      "OFFENSIVE": 0.6975,
+      "NEUTRAL": 0.8839
+    },
+    "confusion_matrix": [
+      [
+        535,
+        83,
+        125
+      ],
+      [
+        68,
+        604,
+        206
+      ],
+      [
+        66,
+        167,
+        2146
+      ]
+    ],
+    "classification_report": {
+      "HATE": {
+        "precision": 0.7997010463378177,
+        "recall": 0.7200538358008075,
+        "f1-score": 0.7577903682719547,
+        "support": 743.0
+      },
+      "OFFENSIVE": {
+        "precision": 0.7072599531615925,
+        "recall": 0.6879271070615034,
+        "f1-score": 0.6974595842956121,
+        "support": 878.0
+      },
+      "NEUTRAL": {
+        "precision": 0.8663706096083973,
+        "recall": 0.9020596889449348,
+        "f1-score": 0.8838550247116969,
+        "support": 2379.0
+      },
+      "accuracy": 0.82125,
+      "macro avg": {
+        "precision": 0.7911105363692692,
+        "recall": 0.7700135439357485,
+        "f1-score": 0.7797016590930879,
+        "support": 4000.0
+      },
+      "weighted avg": {
+        "precision": 0.8190619491408135,
+        "recall": 0.82125,
+        "f1-score": 0.8195247156066842,
+        "support": 4000.0
+      }
+    },
+    "train_time_seconds": 2441.5,
+    "timestamp": "2026-04-02T11:30:16.282447",
+    "display_name": "SudaBERT+BiLSTM"
+  },
+  {
+    "experiment_id": "qarib_3class",
+    "model_name": "qarib",
+    "model_path": "qarib/bert-base-qarib",
+    "dataset_name": "3class",
+    "num_labels": 3,
+    "label_names": [
+      "HATE",
+      "OFFENSIVE",
+      "NEUTRAL"
+    ],
+    "train_size": 32000,
+    "val_size": 4000,
+    "test_size": 4000,
+    "accuracy": 0.8153,
+    "f1_macro": 0.7787,
+    "f1_weighted": 0.8166,
+    "per_class_f1": {
+      "HATE": 0.7595,
+      "OFFENSIVE": 0.6987,
+      "NEUTRAL": 0.878
+    },
+    "confusion_matrix": [
+      [
+        592,
+        62,
+        89
+      ],
+      [
+        107,
+        618,
+        153
+      ],
+      [
+        117,
+        211,
+        2051
+      ]
+    ],
+    "classification_report": {
+      "HATE": {
+        "precision": 0.7254901960784313,
+        "recall": 0.7967698519515478,
+        "f1-score": 0.7594611930724824,
+        "support": 743.0
+      },
+      "OFFENSIVE": {
+        "precision": 0.6936026936026936,
+        "recall": 0.7038724373576309,
+        "f1-score": 0.6986998304126625,
+        "support": 878.0
+      },
+      "NEUTRAL": {
+        "precision": 0.894461404273877,
+        "recall": 0.8621269440941572,
+        "f1-score": 0.8779965753424658,
+        "support": 2379.0
+      },
+      "accuracy": 0.81525,
+      "macro avg": {
+        "precision": 0.7711847646516672,
+        "recall": 0.7875897444677786,
+        "f1-score": 0.7787191996092035,
+        "support": 4000.0
+      },
+      "weighted avg": {
+        "precision": 0.8189865153592482,
+        "recall": 0.81525,
+        "f1-score": 0.8166229925737245,
+        "support": 4000.0
+      }
+    },
+    "train_time_seconds": 407.7,
+    "model_params_M": 135.2,
+    "timestamp": "2026-03-31T16:39:28.521637",
+    "approach": "baseline",
+    "display_name": "qarib"
+  },
+  {
+    "experiment_id": "sudabert_v2_3class",
+    "model_name": "sudabert_v2",
+    "model_path": "models/sudabert_v2/sudabert_v2/",
+    "dataset_name": "3class",
+    "num_labels": 3,
+    "label_names": [
+      "HATE",
+      "OFFENSIVE",
+      "NEUTRAL"
+    ],
+    "train_size": 32000,
+    "val_size": 4000,
+    "test_size": 4000,
+    "accuracy": 0.8133,
+    "f1_macro": 0.7729,
+    "f1_weighted": 0.8133,
+    "per_class_f1": {
+      "HATE": 0.7495,
+      "OFFENSIVE": 0.6908,
+      "NEUTRAL": 0.8785
+    },
+    "confusion_matrix": [
+      [
+        582,
+        68,
+        93
+      ],
+      [
+        104,
+        592,
+        182
+      ],
+      [
+        124,
+        176,
+        2079
+      ]
+    ],
+    "classification_report": {
+      "HATE": {
+        "precision": 0.7185185185185186,
+        "recall": 0.7833109017496636,
+        "f1-score": 0.7495170637475853,
+        "support": 743.0
+      },
+      "OFFENSIVE": {
+        "precision": 0.7081339712918661,
+        "recall": 0.6742596810933941,
+        "f1-score": 0.690781796966161,
+        "support": 878.0
+      },
+      "NEUTRAL": {
+        "precision": 0.883177570093458,
+        "recall": 0.8738965952080706,
+        "f1-score": 0.8785125713078386,
+        "support": 2379.0
+      },
+      "accuracy": 0.81325,
+      "macro avg": {
+        "precision": 0.7699433533012808,
+        "recall": 0.7771557260170429,
+        "f1-score": 0.7729371440071949,
+        "support": 4000.0
+      },
+      "weighted avg": {
+        "precision": 0.8141700813264635,
+        "recall": 0.81325,
+        "f1-score": 0.8133447508105234,
+        "support": 4000.0
+      }
+    },
+    "train_time_seconds": 399.4,
+    "model_params_M": 135.2,
+    "timestamp": "2026-03-31T15:33:44.101822",
+    "approach": "baseline",
+    "display_name": "sudabert_v2"
+  },
+  {
+    "experiment_id": "sudabert_v2_3class",
+    "model_name": "sudabert_v2",
+    "model_path": "models/sudabert_v2/sudabert_v2/",
+    "dataset_name": "3class",
+    "num_labels": 3,
+    "label_names": [
+      "HATE",
+      "OFFENSIVE",
+      "NEUTRAL"
+    ],
+    "train_size": 32000,
+    "val_size": 4000,
+    "test_size": 4000,
+    "accuracy": 0.8133,
+    "f1_macro": 0.7729,
+    "f1_weighted": 0.8133,
+    "per_class_f1": {
+      "HATE": 0.7495,
+      "OFFENSIVE": 0.6908,
+      "NEUTRAL": 0.8785
+    },
+    "confusion_matrix": [
+      [
+        582,
+        68,
+        93
+      ],
+      [
+        104,
+        592,
+        182
+      ],
+      [
+        124,
+        176,
+        2079
+      ]
+    ],
+    "classification_report": {
+      "HATE": {
+        "precision": 0.7185185185185186,
+        "recall": 0.7833109017496636,
+        "f1-score": 0.7495170637475853,
+        "support": 743.0
+      },
+      "OFFENSIVE": {
+        "precision": 0.7081339712918661,
+        "recall": 0.6742596810933941,
+        "f1-score": 0.690781796966161,
+        "support": 878.0
+      },
+      "NEUTRAL": {
+        "precision": 0.883177570093458,
+        "recall": 0.8738965952080706,
+        "f1-score": 0.8785125713078386,
+        "support": 2379.0
+      },
+      "accuracy": 0.81325,
+      "macro avg": {
+        "precision": 0.7699433533012808,
+        "recall": 0.7771557260170429,
+        "f1-score": 0.7729371440071949,
+        "support": 4000.0
+      },
+      "weighted avg": {
+        "precision": 0.8141700813264635,
+        "recall": 0.81325,
+        "f1-score": 0.8133447508105234,
+        "support": 4000.0
+      }
+    },
+    "train_time_seconds": 399.4,
+    "model_params_M": 135.2,
+    "timestamp": "2026-03-31T15:33:44.101822",
+    "approach": "baseline",
+    "display_name": "sudabert_v2"
+  },
+  {
+    "experiment_id": "camelbert_da_3class",
+    "model_name": "camelbert_da",
+    "model_path": "CAMeL-Lab/bert-base-arabic-camelbert-da",
+    "dataset_name": "3class",
+    "num_labels": 3,
+    "label_names": [
+      "HATE",
+      "OFFENSIVE",
+      "NEUTRAL"
+    ],
+    "train_size": 32000,
+    "val_size": 4000,
+    "test_size": 4000,
+    "accuracy": 0.7977,
+    "f1_macro": 0.7607,
+    "f1_weighted": 0.8002,
+    "per_class_f1": {
+      "HATE": 0.7439,
+      "OFFENSIVE": 0.6738,
+      "NEUTRAL": 0.8645
+    },
+    "confusion_matrix": [
+      [
+        597,
+        65,
+        81
+      ],
+      [
+        119,
+        601,
+        158
+      ],
+      [
+        146,
+        240,
+        1993
+      ]
+    ],
+    "classification_report": {
+      "HATE": {
+        "precision": 0.6925754060324826,
+        "recall": 0.8034993270524899,
+        "f1-score": 0.7439252336448599,
+        "support": 743.0
+      },
+      "OFFENSIVE": {
+        "precision": 0.6633554083885209,
+        "recall": 0.6845102505694761,
+        "f1-score": 0.6737668161434978,
+        "support": 878.0
+      },
+      "NEUTRAL": {
+        "precision": 0.892921146953405,
+        "recall": 0.8377469525010509,
+        "f1-score": 0.8644545651702451,
+        "support": 2379.0
+      },
+      "accuracy": 0.79775,
+      "macro avg": {
+        "precision": 0.7496173204581361,
+        "recall": 0.7752521767076724,
+        "f1-score": 0.7607155383195342,
+        "support": 4000.0
+      },
+      "weighted avg": {
+        "precision": 0.8053172459623515,
+        "recall": 0.79775,
+        "f1-score": 0.8002102809280338,
+        "support": 4000.0
+      }
+    },
+    "train_time_seconds": 384.0,
+    "model_params_M": 109.1,
+    "timestamp": "2026-03-31T16:25:24.819853",
+    "approach": "baseline",
+    "display_name": "camelbert_da"
+  },
+  {
+    "experiment_id": "xlm_roberta_3class",
+    "model_name": "xlm_roberta",
+    "model_path": "xlm-roberta-base",
+    "dataset_name": "3class",
+    "num_labels": 3,
+    "label_names": [
+      "HATE",
+      "OFFENSIVE",
+      "NEUTRAL"
+    ],
+    "train_size": 32000,
+    "val_size": 4000,
+    "test_size": 4000,
+    "accuracy": 0.8007,
+    "f1_macro": 0.7554,
+    "f1_weighted": 0.7971,
+    "per_class_f1": {
+      "HATE": 0.7618,
+      "OFFENSIVE": 0.6376,
+      "NEUTRAL": 0.867
+    },
+    "confusion_matrix": [
+      [
+        566,
+        56,
+        121
+      ],
+      [
+        91,
+        519,
+        268
+      ],
+      [
+        86,
+        175,
+        2118
+      ]
+    ],
+    "classification_report": {
+      "HATE": {
+        "precision": 0.7617765814266487,
+        "recall": 0.7617765814266487,
+        "f1-score": 0.7617765814266487,
+        "support": 743.0
+      },
+      "OFFENSIVE": {
+        "precision": 0.692,
+        "recall": 0.591116173120729,
+        "f1-score": 0.6375921375921376,
+        "support": 878.0
+      },
+      "NEUTRAL": {
+        "precision": 0.8448344635021938,
+        "recall": 0.8902900378310215,
+        "f1-score": 0.866966844044208,
+        "support": 2379.0
+      },
+      "accuracy": 0.80075,
+      "macro avg": {
+        "precision": 0.7662036816429474,
+        "recall": 0.7477275974594665,
+        "f1-score": 0.7554451876876648,
+        "support": 4000.0
+      },
+      "weighted avg": {
+        "precision": 0.7958592971679298,
+        "recall": 0.80075,
+        "f1-score": 0.7970800046967669,
+        "support": 4000.0
+      }
+    },
+    "train_time_seconds": 881.5,
+    "model_params_M": 278.0,
+    "timestamp": "2026-03-31T17:09:10.590174",
+    "approach": "baseline",
+    "display_name": "xlm_roberta"
+  },
+  {
+    "experiment_id": "mbert_3class",
+    "model_name": "mbert",
+    "model_path": "bert-base-multilingual-cased",
+    "dataset_name": "3class",
+    "num_labels": 3,
+    "label_names": [
+      "HATE",
+      "OFFENSIVE",
+      "NEUTRAL"
+    ],
+    "train_size": 32000,
+    "val_size": 4000,
+    "test_size": 4000,
+    "accuracy": 0.793,
+    "f1_macro": 0.7416,
+    "f1_weighted": 0.7868,
+    "per_class_f1": {
+      "HATE": 0.7396,
+      "OFFENSIVE": 0.6236,
+      "NEUTRAL": 0.8617
+    },
+    "confusion_matrix": [
+      [
+        527,
+        57,
+        159
+      ],
+      [
+        80,
+        492,
+        306
+      ],
+      [
+        75,
+        151,
+        2153
+      ]
+    ],
+    "classification_report": {
+      "HATE": {
+        "precision": 0.7727272727272727,
+        "recall": 0.7092866756393001,
+        "f1-score": 0.7396491228070176,
+        "support": 743.0
+      },
+      "OFFENSIVE": {
+        "precision": 0.7028571428571428,
+        "recall": 0.5603644646924829,
+        "f1-score": 0.623574144486692,
+        "support": 878.0
+      },
+      "NEUTRAL": {
+        "precision": 0.8223834988540871,
+        "recall": 0.9050021017234132,
+        "f1-score": 0.8617170302181308,
+        "support": 2379.0
+      },
+      "accuracy": 0.793,
+      "macro avg": {
+        "precision": 0.7659893048128342,
+        "recall": 0.7248844140183989,
+        "f1-score": 0.7416467658372801,
+        "support": 4000.0
+      },
+      "weighted avg": {
+        "precision": 0.786923819709702,
+        "recall": 0.793,
+        "f1-score": 0.7867705529984658,
+        "support": 4000.0
+      }
+    },
+    "train_time_seconds": 721.5,
+    "model_params_M": 177.9,
+    "timestamp": "2026-03-31T17:21:17.319495",
+    "approach": "baseline",
+    "display_name": "mbert"
+  },
+  {
+    "experiment_id": "ensemble_binary",
+    "approach": "ensemble",
+    "ensemble_members": [
+      "marbertv2",
+      "arabertv2",
+      "camelbert_da"
+    ],
+    "ensemble_weights": [
+      0.3353,
+      0.3335,
+      0.3312
+    ],
+    "best_strategy": "weighted_average",
+    "dataset_name": "binary",
+    "num_labels": 2,
+    "label_names": [
+      "HARMFUL",
+      "NEUTRAL"
+    ],
+    "test_size": 4000,
+    "weighted_avg_f1": 0.8625,
+    "majority_vote_f1": 0.8603,
+    "accuracy": 0.8682,
+    "f1_macro": 0.8625,
+    "f1_weighted": 0.8678,
+    "per_class_f1": {
+      "HARMFUL": 0.8344,
+      "NEUTRAL": 0.8906
+    },
+    "confusion_matrix": [
+      [
+        1328,
+        293
+      ],
+      [
+        234,
+        2145
+      ]
+    ],
+    "classification_report": {
+      "HARMFUL": {
+        "precision": 0.8501920614596671,
+        "recall": 0.8192473781616286,
+        "f1-score": 0.8344329249136035,
+        "support": 1621.0
+      },
+      "NEUTRAL": {
+        "precision": 0.8798195242001641,
+        "recall": 0.9016393442622951,
+        "f1-score": 0.8905958065185801,
+        "support": 2379.0
+      },
+      "accuracy": 0.86825,
+      "macro avg": {
+        "precision": 0.8650057928299155,
+        "recall": 0.8604433612119619,
+        "f1-score": 0.8625143657160919,
+        "support": 4000.0
+      },
+      "weighted avg": {
+        "precision": 0.8678129949245776,
+        "recall": 0.86825,
+        "f1-score": 0.8678357987481633,
+        "support": 4000.0
+      }
+    },
+    "train_time_seconds": 28.9,
+    "timestamp": "2026-04-02T08:53:12.048531",
+    "display_name": "Ensemble(Top3)"
+  },
+  {
+    "experiment_id": "marbertv2_binary",
+    "model_name": "marbertv2",
+    "model_path": "UBC-NLP/MARBERTv2",
+    "dataset_name": "binary",
+    "num_labels": 2,
+    "label_names": [
+      "HARMFUL",
+      "NEUTRAL"
+    ],
+    "train_size": 32000,
+    "val_size": 4000,
+    "test_size": 4000,
+    "accuracy": 0.858,
+    "f1_macro": 0.8515,
+    "f1_weighted": 0.8574,
+    "per_class_f1": {
+      "HARMFUL": 0.8206,
+      "NEUTRAL": 0.8825
+    },
+    "confusion_matrix": [
+      [
+        1299,
+        322
+      ],
+      [
+        246,
+        2133
+      ]
+    ],
+    "classification_report": {
+      "HARMFUL": {
+        "precision": 0.8407766990291262,
+        "recall": 0.8013571869216533,
+        "f1-score": 0.8205938092229943,
+        "support": 1621.0
+      },
+      "NEUTRAL": {
+        "precision": 0.8688391038696538,
+        "recall": 0.8965952080706179,
+        "f1-score": 0.8824989656599089,
+        "support": 2379.0
+      },
+      "accuracy": 0.858,
+      "macro avg": {
+        "precision": 0.85480790144939,
+        "recall": 0.8489761974961356,
+        "f1-score": 0.8515463874414516,
+        "support": 4000.0
+      },
+      "weighted avg": {
+        "precision": 0.8574668143080301,
+        "recall": 0.858,
+        "f1-score": 0.8574119010138492,
+        "support": 4000.0
+      }
+    },
+    "train_time_seconds": 554.2,
+    "model_params_M": 162.8,
+    "timestamp": "2026-03-31T15:43:03.230170",
+    "approach": "baseline",
+    "display_name": "marbertv2"
+  },
+  {
+    "experiment_id": "arabertv2_binary",
+    "model_name": "arabertv2",
+    "model_path": "aubmindlab/bert-base-arabertv02",
+    "dataset_name": "binary",
+    "num_labels": 2,
+    "label_names": [
+      "HARMFUL",
+      "NEUTRAL"
+    ],
+    "train_size": 32000,
+    "val_size": 4000,
+    "test_size": 4000,
+    "accuracy": 0.854,
+    "f1_macro": 0.8468,
+    "f1_weighted": 0.8531,
+    "per_class_f1": {
+      "HARMFUL": 0.8134,
+      "NEUTRAL": 0.8801
+    },
+    "confusion_matrix": [
+      [
+        1273,
+        348
+      ],
+      [
+        236,
+        2143
+      ]
+    ],
+    "classification_report": {
+      "HARMFUL": {
+        "precision": 0.8436050364479788,
+        "recall": 0.7853177051202961,
+        "f1-score": 0.8134185303514377,
+        "support": 1621.0
+      },
+      "NEUTRAL": {
+        "precision": 0.86029706945002,
+        "recall": 0.9007986548970156,
+        "f1-score": 0.8800821355236139,
+        "support": 2379.0
+      },
+      "accuracy": 0.854,
+      "macro avg": {
+        "precision": 0.8519510529489994,
+        "recall": 0.8430581800086558,
+        "f1-score": 0.8467503329375259,
+        "support": 4000.0
+      },
+      "weighted avg": {
+        "precision": 0.8535326230759429,
+        "recall": 0.854,
+        "f1-score": 0.8530667095275895,
+        "support": 4000.0
+      }
+    },
+    "train_time_seconds": 403.8,
+    "model_params_M": 135.2,
+    "timestamp": "2026-03-31T16:01:21.315024",
+    "approach": "baseline",
+    "display_name": "arabertv2"
+  },
+  {
+    "experiment_id": "distill_sudabert_binary",
+    "approach": "knowledge_distillation",
+    "teacher": "marbertv2",
+    "teacher_f1": 0.8515,
+    "student": "sudabert_v1",
+    "temperature": 4.0,
+    "alpha": 0.5,
+    "dataset_name": "binary",
+    "num_labels": 2,
+    "label_names": [
+      "HARMFUL",
+      "NEUTRAL"
+    ],
+    "train_size": 32000,
+    "val_size": 4000,
+    "test_size": 4000,
+    "best_val_f1": 0.8575,
+    "epochs_trained": 5,
+    "accuracy": 0.851,
+    "f1_macro": 0.8448,
+    "f1_weighted": 0.8507,
+    "per_class_f1": {
+      "HARMFUL": 0.8136,
+      "NEUTRAL": 0.8759
+    },
+    "confusion_matrix": [
+      [
+        1301,
+        320
+      ],
+      [
+        276,
+        2103
+      ]
+    ],
+    "classification_report": {
+      "HARMFUL": {
+        "precision": 0.8249841471147749,
+        "recall": 0.8025909932140654,
+        "f1-score": 0.8136335209505942,
+        "support": 1621.0
+      },
+      "NEUTRAL": {
+        "precision": 0.8679323153115972,
+        "recall": 0.8839848675914249,
+        "f1-score": 0.8758850478967097,
+        "support": 2379.0
+      },
+      "accuracy": 0.851,
+      "macro avg": {
+        "precision": 0.8464582312131861,
+        "recall": 0.8432879304027452,
+        "f1-score": 0.844759284423652,
+        "support": 4000.0
+      },
+      "weighted avg": {
+        "precision": 0.8505275701498349,
+        "recall": 0.851,
+        "f1-score": 0.8506576166017965,
+        "support": 4000.0
+      }
+    },
+    "train_time_seconds": 1444.7,
+    "timestamp": "2026-04-02T10:49:34.286020",
+    "display_name": "SudaBERT-Distill"
+  },
+  {
+    "experiment_id": "bilstm_sudabert_binary",
+    "approach": "bilstm_attention",
+    "base_model": "sudabert_v1",
+    "dataset_name": "binary",
+    "num_labels": 2,
+    "label_names": [
+      "HARMFUL",
+      "NEUTRAL"
+    ],
+    "train_size": 32000,
+    "val_size": 4000,
+    "test_size": 4000,
+    "best_val_f1": 0.8579,
+    "epochs_trained": 8,
+    "accuracy": 0.8468,
+    "f1_macro": 0.8415,
+    "f1_weighted": 0.8469,
+    "per_class_f1": {
+      "HARMFUL": 0.8125,
+      "NEUTRAL": 0.8704
+    },
+    "confusion_matrix": [
+      [
+        1328,
+        293
+      ],
+      [
+        320,
+        2059
+      ]
+    ],
+    "classification_report": {
+      "HARMFUL": {
+        "precision": 0.8058252427184466,
+        "recall": 0.8192473781616286,
+        "f1-score": 0.8124808810033649,
+        "support": 1621.0
+      },
+      "NEUTRAL": {
+        "precision": 0.8754251700680272,
+        "recall": 0.8654897015552753,
+        "f1-score": 0.870429084760093,
+        "support": 2379.0
+      },
+      "accuracy": 0.84675,
+      "macro avg": {
+        "precision": 0.8406252063932369,
+        "recall": 0.842368539858452,
+        "f1-score": 0.8414549828817289,
+        "support": 4000.0
+      },
+      "weighted avg": {
+        "precision": 0.8472197995096097,
+        "recall": 0.84675,
+        "f1-score": 0.846945575187679,
+        "support": 4000.0
+      }
+    },
+    "train_time_seconds": 2442.4,
+    "timestamp": "2026-04-02T09:56:35.855096",
+    "display_name": "SudaBERT+BiLSTM"
+  },
+  {
+    "experiment_id": "camelbert_da_binary",
+    "model_name": "camelbert_da",
+    "model_path": "CAMeL-Lab/bert-base-arabic-camelbert-da",
+    "dataset_name": "binary",
+    "num_labels": 2,
+    "label_names": [
+      "HARMFUL",
+      "NEUTRAL"
+    ],
+    "train_size": 32000,
+    "val_size": 4000,
+    "test_size": 4000,
+    "accuracy": 0.8465,
+    "f1_macro": 0.8412,
+    "f1_weighted": 0.8467,
+    "per_class_f1": {
+      "HARMFUL": 0.812,
+      "NEUTRAL": 0.8703
+    },
+    "confusion_matrix": [
+      [
+        1326,
+        295
+      ],
+      [
+        319,
+        2060
+      ]
+    ],
+    "classification_report": {
+      "HARMFUL": {
+        "precision": 0.8060790273556231,
+        "recall": 0.8180135718692165,
+        "f1-score": 0.8120024494794856,
+        "support": 1621.0
+      },
+      "NEUTRAL": {
+        "precision": 0.8747346072186837,
+        "recall": 0.8659100462379151,
+        "f1-score": 0.8702999577524292,
+        "support": 2379.0
+      },
+      "accuracy": 0.8465,
+      "macro avg": {
+        "precision": 0.8404068172871534,
+        "recall": 0.8419618090535659,
+        "f1-score": 0.8411512036159574,
+        "support": 4000.0
+      },
+      "weighted avg": {
+        "precision": 0.8469119334791784,
+        "recall": 0.8465,
+        "f1-score": 0.8466748925248188,
+        "support": 4000.0
+      }
+    },
+    "train_time_seconds": 513.3,
+    "model_params_M": 109.1,
+    "timestamp": "2026-03-31T16:18:56.445855",
+    "approach": "baseline",
+    "display_name": "camelbert_da"
+  },
+  {
+    "experiment_id": "qarib_binary",
+    "model_name": "qarib",
+    "model_path": "qarib/bert-base-qarib",
+    "dataset_name": "binary",
+    "num_labels": 2,
+    "label_names": [
+      "HARMFUL",
+      "NEUTRAL"
+    ],
+    "train_size": 32000,
+    "val_size": 4000,
+    "test_size": 4000,
+    "accuracy": 0.843,
+    "f1_macro": 0.8391,
+    "f1_weighted": 0.8438,
+    "per_class_f1": {
+      "HARMFUL": 0.8139,
+      "NEUTRAL": 0.8642
+    },
+    "confusion_matrix": [
+      [
+        1373,
+        248
+      ],
+      [
+        380,
+        1999
+      ]
+    ],
+    "classification_report": {
+      "HARMFUL": {
+        "precision": 0.7832287507130633,
+        "recall": 0.8470080197409007,
+        "f1-score": 0.8138707765263782,
+        "support": 1621.0
+      },
+      "NEUTRAL": {
+        "precision": 0.8896306186025812,
+        "recall": 0.8402690205968895,
+        "f1-score": 0.8642455685257242,
+        "support": 2379.0
+      },
+      "accuracy": 0.843,
+      "macro avg": {
+        "precision": 0.8364296846578223,
+        "recall": 0.8436385201688951,
+        "f1-score": 0.8390581725260512,
+        "support": 4000.0
+      },
+      "weighted avg": {
+        "precision": 0.8465112616403542,
+        "recall": 0.843,
+        "f1-score": 0.8438311840679892,
+        "support": 4000.0
+      }
+    },
+    "train_time_seconds": 426.8,
+    "model_params_M": 135.2,
+    "timestamp": "2026-03-31T16:32:36.176766",
+    "approach": "baseline",
+    "display_name": "qarib"
+  },
+  {
+    "experiment_id": "sudabert_v2_binary",
+    "model_name": "sudabert_v2",
+    "model_path": "models/sudabert_v2/sudabert_v2/",
+    "dataset_name": "binary",
+    "num_labels": 2,
+    "label_names": [
+      "HARMFUL",
+      "NEUTRAL"
+    ],
+    "train_size": 32000,
+    "val_size": 4000,
+    "test_size": 4000,
+    "accuracy": 0.84,
+    "f1_macro": 0.8362,
+    "f1_weighted": 0.8409,
+    "per_class_f1": {
+      "HARMFUL": 0.8112,
+      "NEUTRAL": 0.8612
+    },
+    "confusion_matrix": [
+      [
+        1375,
+        246
+      ],
+      [
+        394,
+        1985
+      ]
+    ],
+    "classification_report": {
+      "HARMFUL": {
+        "precision": 0.7772752967778406,
+        "recall": 0.8482418260333128,
+        "f1-score": 0.8112094395280236,
+        "support": 1621.0
+      },
+      "NEUTRAL": {
+        "precision": 0.8897355445988346,
+        "recall": 0.8343841950399328,
+        "f1-score": 0.8611713665943601,
+        "support": 2379.0
+      },
+      "accuracy": 0.84,
+      "macro avg": {
+        "precision": 0.8335054206883377,
+        "recall": 0.8413130105366228,
+        "f1-score": 0.8361904030611919,
+        "support": 4000.0
+      },
+      "weighted avg": {
+        "precision": 0.8441610291693767,
+        "recall": 0.84,
+        "f1-score": 0.8409242956507273,
+        "support": 4000.0
+      }
+    },
+    "train_time_seconds": 402.0,
+    "model_params_M": 135.2,
+    "timestamp": "2026-03-31T15:27:00.001307",
+    "approach": "baseline",
+    "display_name": "sudabert_v2"
+  },
+  {
+    "experiment_id": "sudabert_v2_binary",
+    "model_name": "sudabert_v2",
+    "model_path": "models/sudabert_v2/sudabert_v2/",
+    "dataset_name": "binary",
+    "num_labels": 2,
+    "label_names": [
+      "HARMFUL",
+      "NEUTRAL"
+    ],
+    "train_size": 32000,
+    "val_size": 4000,
+    "test_size": 4000,
+    "accuracy": 0.84,
+    "f1_macro": 0.8362,
+    "f1_weighted": 0.8409,
+    "per_class_f1": {
+      "HARMFUL": 0.8112,
+      "NEUTRAL": 0.8612
+    },
+    "confusion_matrix": [
+      [
+        1375,
+        246
+      ],
+      [
+        394,
+        1985
+      ]
+    ],
+    "classification_report": {
+      "HARMFUL": {
+        "precision": 0.7772752967778406,
+        "recall": 0.8482418260333128,
+        "f1-score": 0.8112094395280236,
+        "support": 1621.0
+      },
+      "NEUTRAL": {
+        "precision": 0.8897355445988346,
+        "recall": 0.8343841950399328,
+        "f1-score": 0.8611713665943601,
+        "support": 2379.0
+      },
+      "accuracy": 0.84,
+      "macro avg": {
+        "precision": 0.8335054206883377,
+        "recall": 0.8413130105366228,
+        "f1-score": 0.8361904030611919,
+        "support": 4000.0
+      },
+      "weighted avg": {
+        "precision": 0.8441610291693767,
+        "recall": 0.84,
+        "f1-score": 0.8409242956507273,
+        "support": 4000.0
+      }
+    },
+    "train_time_seconds": 402.0,
+    "model_params_M": 135.2,
+    "timestamp": "2026-03-31T15:27:00.001307",
+    "approach": "baseline",
+    "display_name": "sudabert_v2"
+  },
+  {
+    "experiment_id": "xlm_roberta_binary",
+    "model_name": "xlm_roberta",
+    "model_path": "xlm-roberta-base",
+    "dataset_name": "binary",
+    "num_labels": 2,
+    "label_names": [
+      "HARMFUL",
+      "NEUTRAL"
+    ],
+    "train_size": 32000,
+    "val_size": 4000,
+    "test_size": 4000,
+    "accuracy": 0.83,
+    "f1_macro": 0.8217,
+    "f1_weighted": 0.829,
+    "per_class_f1": {
+      "HARMFUL": 0.7833,
+      "NEUTRAL": 0.8601
+    },
+    "confusion_matrix": [
+      [
+        1229,
+        392
+      ],
+      [
+        288,
+        2091
+      ]
+    ],
+    "classification_report": {
+      "HARMFUL": {
+        "precision": 0.8101516150296638,
+        "recall": 0.7581739666872301,
+        "f1-score": 0.7833014659018483,
+        "support": 1621.0
+      },
+      "NEUTRAL": {
+        "precision": 0.842126459927507,
+        "recall": 0.8789407313997478,
+        "f1-score": 0.8601398601398601,
+        "support": 2379.0
+      },
+      "accuracy": 0.83,
+      "macro avg": {
+        "precision": 0.8261390374785854,
+        "recall": 0.818557349043489,
+        "f1-score": 0.8217206630208542,
+        "support": 4000.0
+      },
+      "weighted avg": {
+        "precision": 0.829168654032656,
+        "recall": 0.83,
+        "f1-score": 0.8290011008749059,
+        "support": 4000.0
+      }
+    },
+    "train_time_seconds": 888.5,
+    "model_params_M": 278.0,
+    "timestamp": "2026-03-31T16:54:22.923234",
+    "approach": "baseline",
+    "display_name": "xlm_roberta"
+  },
+  {
+    "experiment_id": "mbert_binary",
+    "model_name": "mbert",
+    "model_path": "bert-base-multilingual-cased",
+    "dataset_name": "binary",
+    "num_labels": 2,
+    "label_names": [
+      "HARMFUL",
+      "NEUTRAL"
+    ],
+    "train_size": 32000,
+    "val_size": 4000,
+    "test_size": 4000,
+    "accuracy": 0.8095,
+    "f1_macro": 0.8024,
+    "f1_weighted": 0.8095,
+    "per_class_f1": {
+      "HARMFUL": 0.765,
+      "NEUTRAL": 0.8398
+    },
+    "confusion_matrix": [
+      [
+        1240,
+        381
+      ],
+      [
+        381,
+        1998
+      ]
+    ],
+    "classification_report": {
+      "HARMFUL": {
+        "precision": 0.7649599012954966,
+        "recall": 0.7649599012954966,
+        "f1-score": 0.7649599012954966,
+        "support": 1621.0
+      },
+      "NEUTRAL": {
+        "precision": 0.8398486759142497,
+        "recall": 0.8398486759142497,
+        "f1-score": 0.8398486759142497,
+        "support": 2379.0
+      },
+      "accuracy": 0.8095,
+      "macro avg": {
+        "precision": 0.8024042886048732,
+        "recall": 0.8024042886048732,
+        "f1-score": 0.8024042886048732,
+        "support": 4000.0
+      },
+      "weighted avg": {
+        "precision": 0.8095,
+        "recall": 0.8095,
+        "f1-score": 0.8095,
+        "support": 4000.0
+      }
+    },
+    "train_time_seconds": 726.7,
+    "model_params_M": 177.9,
+    "timestamp": "2026-03-31T15:14:24.690201",
+    "approach": "baseline",
+    "display_name": "mbert"
+  }
+]
