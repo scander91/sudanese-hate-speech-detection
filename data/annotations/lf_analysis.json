@@ -1,0 +1,322 @@
+[
+  {
+    "name": "lf_tribal_slur_dehumanizing",
+    "coverage": 0.51,
+    "labeled": 202,
+    "hate": 202,
+    "offensive": 0,
+    "neutral": 0
+  },
+  {
+    "name": "lf_tribal_slur_profanity",
+    "coverage": 0.29,
+    "labeled": 115,
+    "hate": 115,
+    "offensive": 0,
+    "neutral": 0
+  },
+  {
+    "name": "lf_tribal_slur_violence",
+    "coverage": 0.33,
+    "labeled": 131,
+    "hate": 131,
+    "offensive": 0,
+    "neutral": 0
+  },
+  {
+    "name": "lf_tribal_slur_always",
+    "coverage": 8.89,
+    "labeled": 3558,
+    "hate": 3558,
+    "offensive": 0,
+    "neutral": 0
+  },
+  {
+    "name": "lf_tribal_name_dehumanizing",
+    "coverage": 0.15,
+    "labeled": 60,
+    "hate": 60,
+    "offensive": 0,
+    "neutral": 0
+  },
+  {
+    "name": "lf_tribal_name_profanity",
+    "coverage": 0.07,
+    "labeled": 26,
+    "hate": 26,
+    "offensive": 0,
+    "neutral": 0
+  },
+  {
+    "name": "lf_tribal_name_violence",
+    "coverage": 0.06,
+    "labeled": 22,
+    "hate": 22,
+    "offensive": 0,
+    "neutral": 0
+  },
+  {
+    "name": "lf_political_dehumanizing",
+    "coverage": 0.69,
+    "labeled": 278,
+    "hate": 278,
+    "offensive": 0,
+    "neutral": 0
+  },
+  {
+    "name": "lf_political_profanity",
+    "coverage": 0.48,
+    "labeled": 192,
+    "hate": 192,
+    "offensive": 0,
+    "neutral": 0
+  },
+  {
+    "name": "lf_political_violence",
+    "coverage": 0.32,
+    "labeled": 126,
+    "hate": 126,
+    "offensive": 0,
+    "neutral": 0
+  },
+  {
+    "name": "lf_violence_incitement_alone",
+    "coverage": 4.02,
+    "labeled": 1607,
+    "hate": 1607,
+    "offensive": 0,
+    "neutral": 0
+  },
+  {
+    "name": "lf_multiple_tribal_slurs",
+    "coverage": 0.81,
+    "labeled": 326,
+    "hate": 326,
+    "offensive": 0,
+    "neutral": 0
+  },
+  {
+    "name": "lf_dehumanizing_violence",
+    "coverage": 0.24,
+    "labeled": 97,
+    "hate": 97,
+    "offensive": 0,
+    "neutral": 0
+  },
+  {
+    "name": "lf_religious_violence",
+    "coverage": 0.06,
+    "labeled": 24,
+    "hate": 24,
+    "offensive": 0,
+    "neutral": 0
+  },
+  {
+    "name": "lf_religious_dehumanizing",
+    "coverage": 0.92,
+    "labeled": 369,
+    "hate": 369,
+    "offensive": 0,
+    "neutral": 0
+  },
+  {
+    "name": "lf_threats_group",
+    "coverage": 0.21,
+    "labeled": 86,
+    "hate": 86,
+    "offensive": 0,
+    "neutral": 0
+  },
+  {
+    "name": "lf_multi_hate_signals",
+    "coverage": 0.09,
+    "labeled": 37,
+    "hate": 37,
+    "offensive": 0,
+    "neutral": 0
+  },
+  {
+    "name": "lf_klb_with_group",
+    "coverage": 1.33,
+    "labeled": 531,
+    "hate": 531,
+    "offensive": 0,
+    "neutral": 0
+  },
+  {
+    "name": "lf_profanity_warparty_hate",
+    "coverage": 0.12,
+    "labeled": 49,
+    "hate": 49,
+    "offensive": 0,
+    "neutral": 0
+  },
+  {
+    "name": "lf_profanity_no_group",
+    "coverage": 2.33,
+    "labeled": 930,
+    "hate": 0,
+    "offensive": 930,
+    "neutral": 0
+  },
+  {
+    "name": "lf_insults_alone",
+    "coverage": 18.86,
+    "labeled": 7542,
+    "hate": 0,
+    "offensive": 7542,
+    "neutral": 0
+  },
+  {
+    "name": "lf_threats_no_group",
+    "coverage": 0.6,
+    "labeled": 242,
+    "hate": 0,
+    "offensive": 242,
+    "neutral": 0
+  },
+  {
+    "name": "lf_dehumanizing_no_group",
+    "coverage": 4.91,
+    "labeled": 1965,
+    "hate": 0,
+    "offensive": 1965,
+    "neutral": 0
+  },
+  {
+    "name": "lf_profanity_insults",
+    "coverage": 0.72,
+    "labeled": 289,
+    "hate": 0,
+    "offensive": 289,
+    "neutral": 0
+  },
+  {
+    "name": "lf_religious_no_violence",
+    "coverage": 1.91,
+    "labeled": 763,
+    "hate": 0,
+    "offensive": 763,
+    "neutral": 0
+  },
+  {
+    "name": "lf_multi_profanity",
+    "coverage": 0.12,
+    "labeled": 46,
+    "hate": 0,
+    "offensive": 46,
+    "neutral": 0
+  },
+  {
+    "name": "lf_political_slur_at_least_offensive",
+    "coverage": 9.56,
+    "labeled": 3823,
+    "hate": 0,
+    "offensive": 3823,
+    "neutral": 0
+  },
+  {
+    "name": "lf_insults_overrides_neutral",
+    "coverage": 4.75,
+    "labeled": 1898,
+    "hate": 0,
+    "offensive": 1898,
+    "neutral": 0
+  },
+  {
+    "name": "lf_news_no_hate",
+    "coverage": 5.36,
+    "labeled": 2142,
+    "hate": 0,
+    "offensive": 0,
+    "neutral": 2142
+  },
+  {
+    "name": "lf_humanitarian_no_hate",
+    "coverage": 6.9,
+    "labeled": 2761,
+    "hate": 0,
+    "offensive": 0,
+    "neutral": 2761
+  },
+  {
+    "name": "lf_reporting_plus_news",
+    "coverage": 1.85,
+    "labeled": 742,
+    "hate": 0,
+    "offensive": 0,
+    "neutral": 742
+  },
+  {
+    "name": "lf_war_party_news",
+    "coverage": 1.79,
+    "labeled": 716,
+    "hate": 0,
+    "offensive": 0,
+    "neutral": 716
+  },
+  {
+    "name": "lf_dialect_no_hate",
+    "coverage": 17.93,
+    "labeled": 7173,
+    "hate": 0,
+    "offensive": 0,
+    "neutral": 7173
+  },
+  {
+    "name": "lf_no_negative_with_positive",
+    "coverage": 21.0,
+    "labeled": 8399,
+    "hate": 0,
+    "offensive": 0,
+    "neutral": 8399
+  },
+  {
+    "name": "lf_short_clean",
+    "coverage": 18.23,
+    "labeled": 7292,
+    "hate": 0,
+    "offensive": 0,
+    "neutral": 7292
+  },
+  {
+    "name": "lf_humanitarian_dialect",
+    "coverage": 1.43,
+    "labeled": 571,
+    "hate": 0,
+    "offensive": 0,
+    "neutral": 571
+  },
+  {
+    "name": "lf_reporting_no_hate",
+    "coverage": 7.63,
+    "labeled": 3053,
+    "hate": 0,
+    "offensive": 0,
+    "neutral": 3053
+  },
+  {
+    "name": "lf_tribal_name_news",
+    "coverage": 0.18,
+    "labeled": 73,
+    "hate": 0,
+    "offensive": 0,
+    "neutral": 73
+  },
+  {
+    "name": "lf_hate_overrides_news",
+    "coverage": 0.2,
+    "labeled": 78,
+    "hate": 78,
+    "offensive": 0,
+    "neutral": 0
+  },
+  {
+    "name": "lf_dehumanizing_standalone_offensive",
+    "coverage": 5.75,
+    "labeled": 2302,
+    "hate": 0,
+    "offensive": 2302,
+    "neutral": 0
+  }
+]

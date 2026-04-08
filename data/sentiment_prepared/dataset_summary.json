@@ -1,0 +1,36 @@
+[
+  {
+    "name": "telecom",
+    "classes": 3,
+    "labels": [
+      "neg",
+      "obj",
+      "pos"
+    ],
+    "train": 4276,
+    "test": 1069
+  },
+  {
+    "name": "sudsenti2",
+    "classes": 2,
+    "labels": [
+      "neg",
+      "pos"
+    ],
+    "train": 3528,
+    "val": 271,
+    "test": 202
+  },
+  {
+    "name": "sudsenti3",
+    "classes": 3,
+    "labels": [
+      "neg",
+      "obj",
+      "pos"
+    ],
+    "train": 6455,
+    "val": 201,
+    "test": 301
+  }
+]

@@ -1,0 +1,190 @@
+{
+  "timestamp": "2026-03-31T09:26:52.342630",
+  "distributions": {
+    "WS": {
+      "HATE": 5645,
+      "OFFENSIVE": 10000,
+      "NEUTRAL": 24355,
+      "MISSING": 0
+    },
+    "GPT-4o-mini": {
+      "HATE": 10279,
+      "OFFENSIVE": 7199,
+      "NEUTRAL": 22522,
+      "MISSING": 0
+    },
+    "Llama-70B": {
+      "HATE": 4154,
+      "OFFENSIVE": 14160,
+      "NEUTRAL": 21686,
+      "MISSING": 0
+    }
+  },
+  "cohens_kappa": {
+    "WS vs GPT-4o-mini": {
+      "kappa": 0.2198,
+      "observed_agreement": 0.5507,
+      "expected_agreement": 0.4241,
+      "n_items": 40000,
+      "interpretation": "Fair"
+    },
+    "WS vs Llama-70B": {
+      "kappa": 0.1421,
+      "observed_agreement": 0.5138,
+      "expected_agreement": 0.4333,
+      "n_items": 40000,
+      "interpretation": "Slight/Poor"
+    },
+    "GPT-4o-mini vs Llama-70B": {
+      "kappa": 0.4498,
+      "observed_agreement": 0.6675,
+      "expected_agreement": 0.3957,
+      "n_items": 40000,
+      "interpretation": "Moderate"
+    }
+  },
+  "fleiss_kappa": {
+    "kappa": 0.2678,
+    "n_items": 40000,
+    "interpretation": "Fair"
+  },
+  "krippendorff_alpha": {
+    "alpha": 0.2678,
+    "n_items": 40000,
+    "interpretation": "Unreliable"
+  },
+  "agreement_levels": {
+    "full_agreement_3of3": 15983,
+    "partial_agreement_2of3": 21330,
+    "no_agreement_0of3": 2687,
+    "total": 40000,
+    "full_pct": 40.0,
+    "partial_pct": 53.3,
+    "no_pct": 6.7
+  },
+  "per_category": {
+    "HATE": {
+      "ws_count": 5645,
+      "gpt_count": 10279,
+      "llama_count": 4154,
+      "all_3_agree": 2360,
+      "at_least_2_agree": 5219
+    },
+    "OFFENSIVE": {
+      "ws_count": 10000,
+      "gpt_count": 7199,
+      "llama_count": 14160,
+      "all_3_agree": 1469,
+      "at_least_2_agree": 8625
+    },
+    "NEUTRAL": {
+      "ws_count": 24355,
+      "gpt_count": 22522,
+      "llama_count": 21686,
+      "all_3_agree": 12154,
+      "at_least_2_agree": 23469
+    }
+  },
+  "top_patterns": [
+    [
+      "NEUTRAL/NEUTRAL/NEUTRAL",
+      12154
+    ],
+    [
+      "NEUTRAL/OFFENSIVE/OFFENSIVE",
+      4284
+    ],
+    [
+      "NEUTRAL/NEUTRAL/OFFENSIVE",
+      4207
+    ],
+    [
+      "OFFENSIVE/NEUTRAL/NEUTRAL",
+      3756
+    ],
+    [
+      "HATE/HATE/HATE",
+      2360
+    ],
+    [
+      "NEUTRAL/HATE/NEUTRAL",
+      1565
+    ],
+    [
+      "OFFENSIVE/OFFENSIVE/OFFENSIVE",
+      1469
+    ],
+    [
+      "OFFENSIVE/HATE/OFFENSIVE",
+      1422
+    ],
+    [
+      "OFFENSIVE/HATE/NEUTRAL",
+      1344
+    ],
+    [
+      "HATE/NEUTRAL/NEUTRAL",
+      1019
+    ],
+    [
+      "HATE/HATE/NEUTRAL",
+      989
+    ],
+    [
+      "OFFENSIVE/HATE/HATE",
+      864
+    ],
+    [
+      "NEUTRAL/HATE/OFFENSIVE",
+      862
+    ],
+    [
+      "OFFENSIVE/NEUTRAL/OFFENSIVE",
+      830
+    ],
+    [
+      "NEUTRAL/OFFENSIVE/NEUTRAL",
+      618
+    ],
+    [
+      "HATE/HATE/OFFENSIVE",
+      455
+    ],
+    [
+      "NEUTRAL/HATE/HATE",
+      418
+    ],
+    [
+      "HATE/OFFENSIVE/OFFENSIVE",
+      376
+    ],
+    [
+      "HATE/NEUTRAL/OFFENSIVE",
+      255
+    ],
+    [
+      "OFFENSIVE/OFFENSIVE/NEUTRAL",
+      183
+    ]
+  ],
+  "tier_counts": {
+    "2": 21330,
+    "3": 2687,
+    "1": 15983
+  },
+  "tier_label_dist": {
+    "1": {
+      "NEUTRAL": 12154,
+      "OFFENSIVE": 1469,
+      "HATE": 2360
+    },
+    "2": {
+      "NEUTRAL": 11315,
+      "OFFENSIVE": 7156,
+      "HATE": 2859
+    },
+    "3": {
+      "NO_MAJORITY": 2687
+    }
+  }
+}
