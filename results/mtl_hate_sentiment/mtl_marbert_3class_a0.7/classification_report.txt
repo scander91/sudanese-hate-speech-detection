@@ -1,0 +1,25 @@
+MTL marbert | HS=3class | α=0.7
+============================================================
+
+=== HATE SPEECH ===
+              precision    recall  f1-score   support
+
+        HATE     0.7943    0.7066    0.7479       743
+   OFFENSIVE     0.7049    0.6936    0.6992       878
+     NEUTRAL     0.8675    0.9025    0.8846      2379
+
+    accuracy                         0.8203      4000
+   macro avg     0.7889    0.7676    0.7772      4000
+weighted avg     0.8182    0.8203    0.8185      4000
+
+
+=== SENTIMENT ===
+              precision    recall  f1-score   support
+
+         neg     0.8508    0.8655    0.8581       751
+         obj     0.3953    0.4595    0.4250       148
+         pos     0.6767    0.5294    0.5941       170
+
+    accuracy                         0.7558      1069
+   macro avg     0.6409    0.6181    0.6257      1069
+weighted avg     0.7600    0.7558    0.7561      1069

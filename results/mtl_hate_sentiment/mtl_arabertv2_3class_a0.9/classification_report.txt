@@ -1,0 +1,25 @@
+MTL arabertv2 | HS=3class | α=0.9
+============================================================
+
+=== HATE SPEECH ===
+              precision    recall  f1-score   support
+
+        HATE     0.7821    0.7631    0.7725       743
+   OFFENSIVE     0.7295    0.6788    0.7032       878
+     NEUTRAL     0.8723    0.9012    0.8865      2379
+
+    accuracy                         0.8267      4000
+   macro avg     0.7946    0.7811    0.7874      4000
+weighted avg     0.8242    0.8267    0.8251      4000
+
+
+=== SENTIMENT ===
+              precision    recall  f1-score   support
+
+         neg     0.8659    0.8429    0.8543       751
+         obj     0.4031    0.5203    0.4543       148
+         pos     0.6803    0.5882    0.6309       170
+
+    accuracy                         0.7577      1069
+   macro avg     0.6498    0.6505    0.6465      1069
+weighted avg     0.7723    0.7577    0.7634      1069

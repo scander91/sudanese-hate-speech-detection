@@ -1,0 +1,24 @@
+MTL marbert | HS=binary | α=0.7
+============================================================
+
+=== HATE SPEECH ===
+              precision    recall  f1-score   support
+
+     HARMFUL     0.8258    0.7779    0.8011      1621
+     NEUTRAL     0.8544    0.8882    0.8710      2379
+
+    accuracy                         0.8435      4000
+   macro avg     0.8401    0.8331    0.8361      4000
+weighted avg     0.8428    0.8435    0.8427      4000
+
+
+=== SENTIMENT ===
+              precision    recall  f1-score   support
+
+         neg     0.8469    0.8842    0.8651       751
+         obj     0.4361    0.3919    0.4128       148
+         pos     0.6184    0.5529    0.5839       170
+
+    accuracy                         0.7633      1069
+   macro avg     0.6338    0.6097    0.6206      1069
+weighted avg     0.7537    0.7633    0.7578      1069
