@@ -1,0 +1,211 @@
+# Single source of truth for paths, data, models and hyper-parameters.
+# Paths are relative to project_root; a relative project_root is resolved against the repository root.
+
+project_root: .
+out_root: runs                       # per-run outputs (predictions, metrics, provenance)
+frozen_dir: data_frozen              # Phase-0 manifests (read-only after build)
+
+# ------------------------------------------------------------------ Phase 0
+data:
+  # Raw corpus files (not distributed with this repository; see README).
+  hs_resolved: data/labeling_corpus/agreement_analysis/resolved_labels.tsv
+  hs_corpus_json: data/labeling_corpus/labeling_corpus_25k.json      # 40K corpus despite the name
+  hs_3class_tsv: data/labeling_corpus/dataset_3class.tsv              # used only for equality checks
+  hs_binary_tsv: data/labeling_corpus/dataset_binary.tsv
+  ws_tsv: data/labeling_corpus/weak_supervision_v3/labeled_corpus_weak.tsv
+  snorkel_module: snorkel_pipeline_v3.py                              # labelling-function module (40 LFs), imported read-only
+  telecom_json: [data/sentiment_prepared/telecom_train.json, data/sentiment_prepared/telecom_test.json]
+  sudsenti3_json: [data/sentiment_prepared/sudsenti3_train.json, data/sentiment_prepared/sudsenti3_val.json,
+                   data/sentiment_prepared/sudsenti3_test.json]
+  sudsenti2_json: [data/sentiment_prepared/sudsenti2_train.json, data/sentiment_prepared/sudsenti2_val.json,
+                   data/sentiment_prepared/sudsenti2_test.json]   # same protocol as SudSenti3
+  split_seed: 42
+  hs_ratios: [0.8, 0.1, 0.1]         # two-stage stratified split (0.2, then 0.5)
+  telecom_test_frac: 0.2             # 80/20; 10% of train -> val
+  telecom_val_frac_of_train: 0.1
+  sudsenti3_folds: 10                # StratifiedKFold(10, shuffle, seed 42)
+  sudsenti3_val_frac_of_trainval: 0.1111111111111111   # 1/9
+  sudsenti2_folds: 10                # same 10-fold CV as SudSenti3 (seed 42)
+  sudsenti2_val_frac_of_trainval: 0.1111111111111111
+  group_by_mhamed: [sudsenti2]       # fold assignment by connected groups of canonical key OR identical CNN (mhamed) input
+  fail_closed_all_representations: [sudsenti2]   # zero cross-partition collisions for EVERY representation, incl. mhamed
+  fold_subset: null                  # smoke tests only: restrict fold jobs to these fold ids (null = all folds)
+  conflict_policy: drop_group        # duplicate groups with >1 label are removed entirely
+  lf_weight_fit: train_only          # LF weights fitted on the training partition only
+  hs_labels_3class: [HATE, OFFENSIVE, NEUTRAL]
+  hs_labels_binary: [HARMFUL, NEUTRAL]           # HATE,OFFENSIVE -> HARMFUL
+  sent_labels: [neg, obj, pos]                   # sorted label set (Telecom, SudSenti3)
+  sudsenti2_labels: [neg, pos]                   # SudSenti2 is binary
+
+# ------------------------------------------------------------------ Phase 1
+preprocessing:                       # per task, applied separately
+  hs: alg3                           #   HS: Algorithm 3
+  telecom: minimal                   #   Telecom: minimal rule
+  sudsenti3: minimal                 #   SudSenti3: minimal rule
+  sudsenti2: minimal                 #   SudSenti2: minimal rule
+                                     #   MTL: HS task uses 'hs', the Telecom auxiliary task uses 'telecom'; CNN uses cnn.preprocessing
+seeds: [42, 43, 44, 45, 46]          # 5 run seeds (split seed is fixed separately)
+hs_tasks: [binary, 3class]
+keep_checkpoints: [base]             # best checkpoints kept for baseline runs (XAI); other kinds keep predictions only
+
+models:                              # the 9 encoders
+  marbertv2:    UBC-NLP/MARBERTv2
+  marbert:      UBC-NLP/MARBERT
+  arabertv2:    aubmindlab/bert-base-arabertv02
+  arbert:       UBC-NLP/ARBERT
+  camelbert_da: CAMeL-Lab/bert-base-arabic-camelbert-da
+  qarib:        qarib/bert-base-qarib
+  sudabert_v2:  models/sudabert_v2/sudabert_v2/     # local; relative to project_root
+  xlm_roberta:  xlm-roberta-base
+  mbert:        bert-base-multilingual-cased
+
+baseline:                            # HF Trainer defaults mirrored
+  lr: 2.0e-5
+  epochs: 5
+  patience: 2
+  batch_size: 16
+  eval_batch_size: 32
+  max_len: 128
+  weight_decay: 0.01
+  warmup_ratio: 0.1
+  fp16: true
+  max_grad_norm: 1.0                 # HF Trainer default
+  adam_betas: [0.9, 0.999]
+  adam_eps: 1.0e-8
+  no_decay_bias_layernorm: true      # HF Trainer default parameter grouping
+
+bilstm:
+  encoder: sudabert_v2
+  lr: 2.0e-5                         # head; encoder uses lr * encoder_lr_mult
+  encoder_lr_mult: 0.1
+  epochs: 8
+  patience: 3
+  lstm_hidden: 256
+  lstm_layers: 2
+  dropout: 0.3
+  weight_decay: 0.01
+  warmup_ratio: 0.1
+  batch_size: 16
+  eval_batch_size: 32
+  max_len: 128
+  fp16: false
+  max_grad_norm: 1.0
+
+distill:
+  student: sudabert_v2
+  teacher_candidates: [marbertv2, marbert, arabertv2, arbert, camelbert_da, qarib, xlm_roberta, mbert]  # all baselines except the student
+  teacher_selection: mean_val_macro_f1   # validation only; teacher run with the same seed (primary protocol)
+  repro_teacher_candidates: [marbertv2, arabertv2, camelbert_da, qarib]   # 4-candidate set -> distill4 sensitivity row
+  temperature: 4.0
+  alpha: 0.5
+  lr: 2.0e-5
+  epochs: 8
+  patience: 3
+  weight_decay: 0.01
+  warmup_ratio: 0.1
+  batch_size: 16
+  eval_batch_size: 32
+  max_len: 128
+  fp16: false
+  max_grad_norm: 1.0
+
+ensemble:                            # all choices on validation (mean over seeds)
+  candidates: [marbertv2, marbert, arabertv2, arbert, camelbert_da, qarib, sudabert_v2, xlm_roberta, mbert]
+  size: 3                            # K=3
+  member_selection: top_k_val        # top-3 by mean validation macro-F1 over seeds ('exhaustive_val' = all C(9,3) subsets x rules)
+  rules: [uniform_prob_mean, hard_majority, valf1_weighted_prob_mean]   # rule chosen on mean validation macro-F1
+  also_report_fixed_paper_members:   # predeclared members, reported as a secondary row
+    binary: [marbertv2, arabertv2, camelbert_da]
+    3class: [marbertv2, arabertv2, sudabert_v2]
+
+mtl:
+  encoders: [arabertv2, marbert, marbertv2]
+  alphas: [0.5, 0.7, 0.9]
+  alpha_selection: mean_val_hs_macro_f1          # per (encoder, task), validation only
+  lr: 2.0e-5
+  epochs: 5
+  batch_size: 16
+  eval_batch_size: 64
+  max_len: 128
+  weight_decay: 0.01
+  warmup_ratio: 0.1
+  dropout: 0.1
+  fp16: false
+  max_grad_norm: 1.0
+  exclude_aux_colliding_with_hs_eval: true       # drop auxiliary rows that coincide with HS val/test texts
+
+sentiment:                           # same schedule as baseline
+  models: [marbertv2, marbert, arabertv2, arbert, camelbert_da, qarib, sudabert_v2, xlm_roberta, mbert]
+  datasets: [telecom, sudsenti3, sudsenti2]
+  lr: 2.0e-5
+  epochs: 5
+  patience: 2
+  batch_size: 16
+  eval_batch_size: 64
+  max_len: 128
+  weight_decay: 0.01
+  warmup_ratio: 0.1
+  fp16: true
+  max_grad_norm: 1.0
+  telecom_ensemble: {size: 3, member_selection: top_val_macro_f1, rule: uniform_prob_mean}
+
+cnn:
+  models: [cnn_baseline, scm_mma]
+  datasets: [hs_binary, hs_3class, sudsenti3, sudsenti2]
+  embedding: 128
+  max_len: 80
+  batch_size: 128
+  epochs: 50
+  patience: 5
+  early_stop_monitor: val_macro_f1   # same selection signal as all other models ('val_loss' also supported)
+  lr: 1.0e-4
+  num_words: 50000
+  preprocessing: mhamed
+
+xai:                                 # post-freeze SHAP/LIME on the frozen selected checkpoints (rv2/xai.py)
+  explain_model: best_single         # validation-selected best single baseline per task (selection best_single_<task>)
+  seed_rule: first_seed              # run seed = seeds[0]
+  compare_encoder: arabertv2         # MTL-vs-baseline LIME comparison (MTL-AraBERTv2 vs single-task AraBERTv2)
+  sample_rule: stratified_true_label # per class floor(n/C) test items, RandomState(sample_seed); never uses predictions
+  sample_seed: 42
+  shap: {n_samples: 200, masker_regex: '\s+', max_evals: 500, batch_size: 16}
+  lime: {n_examples: 15, num_features: 15, num_samples: 500, split_expression: '\s+'}
+  topk_global: 100
+  topk_per_class: 30
+  min_count: 3
+
+evaluation:
+  bootstrap_B: 2000                  # 95% CI (percentile bootstrap over test items, pooled seeds)
+  ci_level: 0.95
+  alpha: 0.05
+  nb_test_train_frac: 0.8            # Nadeau-Bengio n_test/n_train uses actual partition sizes
+
+hosts:                               # worker hosts (example names; replace with your own)
+  # gpus: GPU indices; speed: assumed relative throughput (used by `launcher plan` only)
+  # kinds_first: training kinds this host takes before any other; exclude_kinds: never run on this host
+  # (enforced by the launcher AND by rv2.run itself, including the kinds' test jobs)
+  host1: {gpus: [0], kinds_first: [mtl], speed: 2.0}              # all MTL runs, first; then anything else
+  host2: {gpus: [0, 1, 2, 3], exclude_kinds: [mtl], speed: 0.8}   # never MTL
+  host3: {gpus: [], local: true, speed: 0.0}                      # CPU-only (post-hoc jobs)
+python: python                       # interpreter used for remote workers
+
+# Pinned model revisions (HF snapshot commit) and a sha256 over the local SudaBERT-v2 directory.
+# Part of every job fingerprint; verified when the model is loaded.
+model_revisions:
+  marbertv2:    fe88db9db8ccdb0c4e1627495f405c44a5f89066
+  marbert:      88e1fa192dd723cf0b3563500aec46209762eb22
+  arabertv2:    016fb9d6768f522a59c6e0d2d5d5d43a4e1bff60
+  arbert:       a5118ac0caabfc6faba1cf7d92c779f7e2e15d44
+  camelbert_da: 231698eab9ebf0ae7b518a64277b81b2fe829f2d
+  qarib:        b4d8b380e40be2e149cf56a8f8a5efa7f246253d
+  sudabert_v2:  "sha256:ca726ce9446fad9f413d4bcc1e2d025b5d07bb2610ee68c1f09df4ff0e81457b"
+  xlm_roberta:  e73636d4f797dec63c3081bb6ed5c7b0bb3f2089
+  mbert:        3f076fdb1ab68d5b2880cb87a0886f315b8146f8
+
+launcher:
+  max_attempts: 3                    # a FAILED job is retried until it has failed this many times
+  lock_lease_seconds: 1800           # a lock whose heartbeat is older than this is reported by `launcher status`
+  heartbeat_seconds: 60
+  poll_seconds: 60
+  ssh: "ssh -o BatchMode=yes {host}"                              # used by `launcher start`
+  ssh_check: "ssh -o BatchMode=yes -o ConnectTimeout=10 {host}"   # used by `launcher unlock` for a remote owner PID
